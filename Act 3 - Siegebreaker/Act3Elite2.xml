@@ -1,5 +1,5 @@
 <Profile>
-<Name>[Act3 - Inferno] Champion-Hunting 0.1 - The Skycrown Battlements w/ checkpoints</Name>
+<Name>[Act3 - Inferno] Champion-Hunting 0.3 - The Skycrown Battlements w/ checkpoints</Name>
 <KillMonsters>True</KillMonsters>
 <PickupLoot>True</PickupLoot>
 <GameParams quest="101750" step="10" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> // Heart of Sin - Kill Azmodan
