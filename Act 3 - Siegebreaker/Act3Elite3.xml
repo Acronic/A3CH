@@ -111,6 +111,6 @@
 
 
 	
-<Continue profile="Act3Elite1.xml"/>
+<Continue profile="Act3Elite1.xml" exitgame="true" />
 </Order>
 </Profile>
