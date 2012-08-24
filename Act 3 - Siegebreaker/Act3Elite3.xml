@@ -41,6 +41,8 @@
 <While condition="IsActiveQuest(101758) and IsActiveQuestStep(10)" >
 <WaitTimer questId="1" waitTime="1000" />
 <UseTownPortal questId="1" />
+<Continue profile="Act3Elite1.xml" exitgame="true" />
+
 </While>
 
 </If>
@@ -75,6 +77,8 @@
 <While condition="IsActiveQuest(101758) and IsActiveQuestStep(10)" >
 <WaitTimer questId="1" waitTime="1000" />
 <UseTownPortal questId="1" />
+<Continue profile="Act3Elite1.xml" exitgame="true" />
+
 </While>
 
 
@@ -103,6 +107,8 @@
 <While condition="IsActiveQuest(101758) and IsActiveQuestStep(10)" >
 <WaitTimer questId="1" waitTime="1000" />
 <UseTownPortal questId="1" />
+<Continue profile="Act3Elite1.xml" exitgame="true" />
+
 </While>
 
 	
