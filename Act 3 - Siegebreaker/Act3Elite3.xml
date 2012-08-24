@@ -1,5 +1,5 @@
 <Profile>
-<Name>[Act3 - Inferno] Champion-Hunting 0.4 - Siegebreaker</Name>
+<Name>[Act3 - Inferno] Champion-Hunting 0.4 - Siegebreaker - Nightmare</Name>
 <KillMonsters>True</KillMonsters>
 <PickupLoot>True</PickupLoot>
 <GameParams quest="101750" step="10" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> 
@@ -33,17 +33,18 @@
 
 <MoveTo questId="1" pathPrecision="10" x="327.2023" y="365.0622" z="0.1000001" />
 
+
 <While condition="IsActiveQuest(101750) and IsActiveQuestStep(17)" >
 <WaitTimer questId="1" waitTime="4500" />
 <TalkTo questId="101750" stepId="17" actorId="3095" skipConversation="True" />
 </While> 
 
-<While condition="IsActiveQuest(101758) and IsActiveQuestStep(10)" >
+<If condition="IsActiveQuest(101758) and IsActiveQuestStep(10)" >
 <WaitTimer questId="1" waitTime="1000" />
 <UseTownPortal questId="1" />
+<WaitTimer questId="1" waitTime="1000" />
 <Continue profile="Act3Elite1.xml" exitgame="true" />
-
-</While>
+</If>
 
 </If>
 	<!-- Checkpoint on WP -->
@@ -69,17 +70,19 @@
 
 <MoveTo questId="1" pathPrecision="10" x="327.2023" y="365.0622" z="0.1000001" />
 
+
+
 <While condition="IsActiveQuest(101750) and IsActiveQuestStep(17)" >
 <WaitTimer questId="1" waitTime="4500" />
 <TalkTo questId="101750" stepId="17" actorId="3095" skipConversation="True" />
 </While> 
 
-<While condition="IsActiveQuest(101758) and IsActiveQuestStep(10)" >
+<If condition="IsActiveQuest(101758) and IsActiveQuestStep(10)" >
 <WaitTimer questId="1" waitTime="1000" />
 <UseTownPortal questId="1" />
+<WaitTimer questId="1" waitTime="1000" />
 <Continue profile="Act3Elite1.xml" exitgame="true" />
-
-</While>
+</If>
 
 
 
@@ -104,18 +107,18 @@
 <TalkTo questId="101750" stepId="17" actorId="3095" skipConversation="True" />
 </While> 
 
-<While condition="IsActiveQuest(101758) and IsActiveQuestStep(10)" >
+<If condition="IsActiveQuest(101758) and IsActiveQuestStep(10)" >
 <WaitTimer questId="1" waitTime="1000" />
 <UseTownPortal questId="1" />
+<WaitTimer questId="1" waitTime="1000" />
 <Continue profile="Act3Elite1.xml" exitgame="true" />
-
-</While>
-
-	
 </If>
 	
+</If>
 
 	
 <Continue profile="Act3Elite1.xml" exitgame="true" />
+
+	
 </Order>
 </Profile>
