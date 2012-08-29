@@ -1,12 +1,10 @@
 <Profile>
-	<Name>[A3 - Inferno] Champion-Hunting 1.0 Siegebreaker - The Skycrown Battlements w/ checkpoints</Name>
+	<Name>[A3 - Inferno]Champion-Hunting 1.0 Silhouettes - The Skycrown Battlements</Name>
 	<KillMonsters>True</KillMonsters>
 	<PickupLoot>True</PickupLoot>
-	<GameParams quest="101750" step="10" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> // Heart of Sin - Kill Azmodan
+	<GameParams quest="101758" step="1" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> // Heart of Sin - Kill Azmodan
 	<Order>
-		<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="60" />
-
-
+		<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="45" />
 		<If condition="ActorExistsAt(3795, 4263.047, 4200.328, -25.00001, 50)">
 			<MoveTo questId="1" x="4269.954" y="4248.96" z="-24.9" pathPrecision="10" />
 			<MoveTo questId="1" x="4250.376" y="4232.752" z="-24.56764" pathPrecision="10" />
@@ -38,8 +36,6 @@
 			<MoveTo questId="1" x="3240.87" y="2990.068" z="0.1000019" pathPrecision="10" />
 			<MoveTo questId="1" x="3264.937" y="2751.992" z="0.3458459" pathPrecision="10" />
 		</If>
-
-
 		<If condition="ActorExistsAt(3795, 4183.186, 3935.875, 2.820084, 50)">
 			<MoveTo questId="1" x="4189.281" y="3851.575" z="0.09999619" pathPrecision="10" />
 			<MoveTo questId="1" x="4218.278" y="3730.007" z="0.1" pathPrecision="10" />
@@ -67,7 +63,6 @@
 			<MoveTo questId="1" x="3240.87" y="2990.068" z="0.1000019" pathPrecision="10" />
 			<MoveTo questId="1" x="3264.937" y="2751.992" z="0.3458459" pathPrecision="10" />
 		</If>
-
 		<If condition="ActorExistsAt(3795, 3288.18, 3325.812, 0.589447, 50)">
 			<MoveTo questId="1" x="3170.153" y="3318.897" z="25.25741" pathPrecision="10" />
 			<MoveTo questId="1" x="3177.383" y="3183.601" z="0.3082168" pathPrecision="10" />
@@ -75,12 +70,8 @@
 			<MoveTo questId="1" x="3240.87" y="2990.068" z="0.1000019" pathPrecision="10" />
 			<MoveTo questId="1" x="3264.937" y="2751.992" z="0.3458459" pathPrecision="10" />
 		</If>
-
-
 		<If condition="Zeta.ZetaDia.CurrentWorldId==172909">
-
 			<UseWaypoint questId="1" actorId="6442" x="402.5403" y="414.342" z="1.5338" waypointNumber="1" />
-
 			<MoveTo questId="1" x="4250.376" y="4232.752" z="-24.56764" pathPrecision="10" />
 			<MoveTo questId="1" x="4243.99" y="4186.121" z="0.245108" pathPrecision="10" />
 			<MoveTo questId="1" x="4185.254" y="4075.947" z="0.2290937" pathPrecision="10" />
@@ -109,14 +100,9 @@
 			<MoveTo questId="1" x="3225.26" y="3178.965" z="0.1000008" pathPrecision="10" />
 			<MoveTo questId="1" x="3240.87" y="2990.068" z="0.1000019" pathPrecision="10" />
 			<MoveTo questId="1" x="3264.937" y="2751.992" z="0.3458459" pathPrecision="10" />
-
 		</If>
-
-
-
-
 		<UseTownPortal questId="1" />
-
-		<Continue profile="Siegebreaker_BossSiegebreaker.xml"/>
+		<WaitTimer questId="1" waitTime="5000" />
+		<Continue profile="Silhouettes_Battlefields.xml"/>
 	</Order>
 </Profile>
