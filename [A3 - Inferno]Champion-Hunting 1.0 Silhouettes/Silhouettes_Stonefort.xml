@@ -101,7 +101,10 @@
 			<MoveTo questId="1" x="3240.87" y="2990.068" z="0.1000019" pathPrecision="10" />
 			<MoveTo questId="1" x="3264.937" y="2751.992" z="0.3458459" pathPrecision="10" />
 		</If>
-		<UseTownPortal questId="1" />
+
+		<If condition="(not Me.IsInTown)">   
+			<UseTownPortal questId="1" />       
+		</If>		
 		<WaitTimer questId="1" waitTime="5000" />
 		<Continue profile="Silhouettes_Battlefields.xml"/>
 	</Order>

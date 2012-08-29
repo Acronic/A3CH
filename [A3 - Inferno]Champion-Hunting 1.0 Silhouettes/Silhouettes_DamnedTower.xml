@@ -2,7 +2,7 @@
 	<Name>[A3 - Inferno]Champion-Hunting 1.0 Silhouettes- Tower of the Damned Level 1</Name>
 	<KillMonsters>True</KillMonsters>
 	<PickupLoot>True</PickupLoot>
-	<GameParams quest="101758" step="1" act="A3" difficulty="Nightmare" resumeFromSave="False" isPrivate="True" numGames="-1"  /> 
+	<GameParams quest="101758" step="1" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> 
 	<Order>
 		<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="45" />
 		<!-- From Waypoint -->
@@ -65,6 +65,10 @@
 		</If>
 		<!-- From Town -->
 		<WaitTimer questId="1" waitTime="5000" />
+		
+		<If condition="(not Me.IsInTown)">   
+			<UseTownPortal questId="1" />       
+		</If>
 		<Continue profile="Silhouettes_CursedTower.xml"/>
 	</Order>
 </Profile>

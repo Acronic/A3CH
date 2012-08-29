@@ -2,7 +2,7 @@
 	<Name>[A3 - Inferno]Champion-Hunting 1.0 Silhouettes - Tower of the Cursed Level 1</Name>
 	<KillMonsters>True</KillMonsters>
 	<PickupLoot>True</PickupLoot>
-	<GameParams quest="101758" step="1" act="A3" difficulty="Nightmare" resumeFromSave="False" isPrivate="True" numGames="-1"  /> 
+	<GameParams quest="101758" step="1" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> 
 	<Order>
 		<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="45" />
 		<!-- From Waypoint -->
@@ -35,7 +35,6 @@
 			<MoveTo questId="1" x="1054.821" y="1125.832" z="-69.82961" pathPrecision="10" />
 			<MoveTo questId="1" x="1100.408" y="1140.312" z="-80.07538" pathPrecision="10" />
 			<MoveTo questId="1" x="1113.296" y="1040.255" z="-114.508" pathPrecision="10" />
-			<UseTownPortal questId="1" />       
 		</If>
 		<!-- From Waypoint -->
 		<!-- From Town -->
@@ -69,9 +68,12 @@
 			<MoveTo questId="1" x="1054.821" y="1125.832" z="-69.82961" pathPrecision="10" />
 			<MoveTo questId="1" x="1100.408" y="1140.312" z="-80.07538" pathPrecision="10" />
 			<MoveTo questId="1" x="1113.296" y="1040.255" z="-114.508" pathPrecision="10" />
-			<UseTownPortal questId="1" />       
 		</If>
 		<!-- From Town -->
+	
+		<If condition="(not Me.IsInTown)">   
+			<UseTownPortal questId="1" />       
+		</If>
 		<WaitTimer questId="1" waitTime="5000" />
 		<Continue profile="Silhouettes_CoreOnly.xml"/>
 	</Order>

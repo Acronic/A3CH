@@ -38,7 +38,6 @@
 				<MoveTo questId="1" x="169.5594" y="88.21939" z="-24.17553" pathPrecision="10" />
 				<MoveTo questId="1" x="171.034" y="42.417" z="-11.85881" pathPrecision="10" />
 				<MoveTo questId="1" x="101.3988" y="39.12692" z="0.1246951" pathPrecision="10" />	
-				<UseTownPortal questId="1" />       
 			</If>
 		</If>
 		<!-- From Waypoint -->
@@ -77,7 +76,6 @@
 				<MoveTo questId="1" x="169.5594" y="88.21939" z="-24.17553" pathPrecision="10" />
 				<MoveTo questId="1" x="171.034" y="42.417" z="-11.85881" pathPrecision="10" />
 				<MoveTo questId="1" x="101.3988" y="39.12692" z="0.1246951" pathPrecision="10" />	
-				<UseTownPortal questId="1" />       
 			</If>
 		</If>
 		<!-- From Town -->
