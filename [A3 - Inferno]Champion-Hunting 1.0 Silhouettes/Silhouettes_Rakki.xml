@@ -31,13 +31,28 @@
 			<If condition="ActorExistsAt(176001, 1373.309, 587.0353, -22.31143, 30)and ZetaDia.CurrentWorldId == 95804">
 				<WaitTimer WaitTime="500" />
 				<UseObject questId="1" actorId="176001" interactrange="25" />
-				<WaitTimer WaitTime="1000" />
+				<WaitTimer WaitTime="500" />
+				
+				<!-- Guy inside -->
+				<If condition="Zeta.ZetaDia.CurrentWorldId==140444">
 				<MoveTo questId="1" x="168.6867" y="41.3113" z="-11.8103" pathPrecision="10" />
 				<MoveTo questId="1" x="169.3341" y="87.11375" z="-24.1749" pathPrecision="10" />
 				<MoveTo questId="1" x="121.9488" y="75.70328" z="-24.9" pathPrecision="10" />
 				<MoveTo questId="1" x="169.5594" y="88.21939" z="-24.17553" pathPrecision="10" />
 				<MoveTo questId="1" x="171.034" y="42.417" z="-11.85881" pathPrecision="10" />
 				<MoveTo questId="1" x="101.3988" y="39.12692" z="0.1246951" pathPrecision="10" />	
+				</If>
+				
+				<!-- Elite inside -->
+				<If condition="Zeta.ZetaDia.CurrentWorldId==205422">
+				<MoveTo questId="1" x="168.6867" y="41.3113" z="-11.8103" pathPrecision="10" />
+				<MoveTo questId="1" x="169.3341" y="87.11375" z="-24.1749" pathPrecision="10" />
+				<MoveTo questId="1" x="121.9488" y="75.70328" z="-24.9" pathPrecision="10" />
+				<MoveTo questId="1" x="169.5594" y="88.21939" z="-24.17553" pathPrecision="10" />
+				<MoveTo questId="1" x="171.034" y="42.417" z="-11.85881" pathPrecision="10" />
+				<MoveTo questId="1" x="101.3988" y="39.12692" z="0.1246951" pathPrecision="10" />	
+				</If>
+
 			</If>
 		</If>
 		<!-- From Waypoint -->
@@ -70,12 +85,28 @@
 				<WaitTimer WaitTime="500" />
 				<UseObject questId="1" actorId="176001" interactrange="25" />
 				<WaitTimer WaitTime="500" />
+				
+				<!-- Guy inside -->
+				<If condition="Zeta.ZetaDia.CurrentWorldId==140444">
 				<MoveTo questId="1" x="168.6867" y="41.3113" z="-11.8103" pathPrecision="10" />
 				<MoveTo questId="1" x="169.3341" y="87.11375" z="-24.1749" pathPrecision="10" />
 				<MoveTo questId="1" x="121.9488" y="75.70328" z="-24.9" pathPrecision="10" />
 				<MoveTo questId="1" x="169.5594" y="88.21939" z="-24.17553" pathPrecision="10" />
 				<MoveTo questId="1" x="171.034" y="42.417" z="-11.85881" pathPrecision="10" />
 				<MoveTo questId="1" x="101.3988" y="39.12692" z="0.1246951" pathPrecision="10" />	
+				</If>
+				
+				<!-- Elite inside -->
+				<If condition="Zeta.ZetaDia.CurrentWorldId==205422">
+				<MoveTo questId="1" x="168.6867" y="41.3113" z="-11.8103" pathPrecision="10" />
+				<MoveTo questId="1" x="169.3341" y="87.11375" z="-24.1749" pathPrecision="10" />
+				<MoveTo questId="1" x="121.9488" y="75.70328" z="-24.9" pathPrecision="10" />
+				<MoveTo questId="1" x="169.5594" y="88.21939" z="-24.17553" pathPrecision="10" />
+				<MoveTo questId="1" x="171.034" y="42.417" z="-11.85881" pathPrecision="10" />
+				<MoveTo questId="1" x="101.3988" y="39.12692" z="0.1246951" pathPrecision="10" />	
+				</If>
+
+
 			</If>
 		</If>
 		<!-- From Town -->
