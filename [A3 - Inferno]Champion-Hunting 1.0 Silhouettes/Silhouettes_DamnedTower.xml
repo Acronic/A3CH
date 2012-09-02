@@ -1,0 +1,74 @@
+<Profile>
+	<Name>[A3 - Inferno]Champion-Hunting 1.0 Silhouettes- Tower of the Damned Level 1</Name>
+	<KillMonsters>True</KillMonsters>
+	<PickupLoot>True</PickupLoot>
+	<GameParams quest="101758" step="1" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> 
+	<Order>
+		<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="45" />
+		<!-- From Waypoint -->
+		<If condition="ActorExistsAt(6442, 1041.245, 990.0298, -9.890291, 40)"> 
+			<MoveTo questId="1" x="992.5949" y="947.2562" z="-9.9" pathPrecision="10" />
+			<MoveTo questId="1" x="968.1286" y="916.5344" z="-9.899998" pathPrecision="10" />
+			<MoveTo questId="1" x="908.6611" y="982.6599" z="-19.6008" pathPrecision="10" />
+			<MoveTo questId="1" x="977.1688" y="1019.743" z="-19.9" pathPrecision="10" />
+			<MoveTo questId="1" x="986.4627" y="998.758" z="-19.70199" pathPrecision="10" />
+			<MoveTo questId="1" x="940.3255" y="1084.178" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="877.7405" y="1101.659" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="894.2853" y="1150.031" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="964.418" y="1129.116" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="985.0302" y="1166.799" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="1039" y="1209.136" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="991.3975" y="1262.625" z="-29.68945" pathPrecision="10" />
+			<MoveTo questId="1" x="963.0684" y="1244.801" z="-29.90001" pathPrecision="10" />
+			<MoveTo questId="1" x="1057.9" y="1282.157" z="-39.0773" pathPrecision="10" />
+			<MoveTo questId="1" x="1160.279" y="1259.792" z="-39.9" pathPrecision="10" />
+			<MoveTo questId="1" x="1221.362" y="1226.558" z="-39.21768" pathPrecision="10" />
+			<MoveTo questId="1" x="1247.493" y="1190.855" z="-29.24453" pathPrecision="10" />
+			<MoveTo questId="1" x="1191.511" y="1155.009" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="1206.698" y="1033.872" z="-19.89999" pathPrecision="10" />
+			<MoveTo questId="1" x="1270.625" y="1030.424" z="-19.80936" pathPrecision="10" />
+			<MoveTo questId="1" x="1221.134" y="944.1177" z="-9.899998" pathPrecision="10" />
+			<MoveTo questId="1" x="1166.586" y="981.3585" z="-9.899996" pathPrecision="10" />
+			<MoveTo questId="1" x="1071.661" y="952.4813" z="-9.899996" pathPrecision="10" />
+			<MoveTo questId="1" x="1041.909" y="989.1411" z="-9.9" pathPrecision="10" />
+			<UseWaypoint questId="1" actorId="6442" x="1041.245" y="990.0298" z="-9.890291" waypointNumber="0" />
+		</If>
+		<!-- From Waypoint -->
+		<!-- From Town -->
+		<If condition="Zeta.ZetaDia.CurrentWorldId==172909">
+			<UseWaypoint questId="1" actorId="6442" x="402.5403" y="414.342" z="1.5338" waypointNumber="7" />
+			<MoveTo questId="1" x="992.5949" y="947.2562" z="-9.9" pathPrecision="10" />
+			<MoveTo questId="1" x="968.1286" y="916.5344" z="-9.899998" pathPrecision="10" />
+			<MoveTo questId="1" x="908.6611" y="982.6599" z="-19.6008" pathPrecision="10" />
+			<MoveTo questId="1" x="977.1688" y="1019.743" z="-19.9" pathPrecision="10" />
+			<MoveTo questId="1" x="986.4627" y="998.758" z="-19.70199" pathPrecision="10" />
+			<MoveTo questId="1" x="940.3255" y="1084.178" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="877.7405" y="1101.659" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="894.2853" y="1150.031" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="964.418" y="1129.116" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="985.0302" y="1166.799" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="1039" y="1209.136" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="991.3975" y="1262.625" z="-29.68945" pathPrecision="10" />
+			<MoveTo questId="1" x="963.0684" y="1244.801" z="-29.90001" pathPrecision="10" />
+			<MoveTo questId="1" x="1057.9" y="1282.157" z="-39.0773" pathPrecision="10" />
+			<MoveTo questId="1" x="1160.279" y="1259.792" z="-39.9" pathPrecision="10" />
+			<MoveTo questId="1" x="1221.362" y="1226.558" z="-39.21768" pathPrecision="10" />
+			<MoveTo questId="1" x="1247.493" y="1190.855" z="-29.24453" pathPrecision="10" />
+			<MoveTo questId="1" x="1191.511" y="1155.009" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="1206.698" y="1033.872" z="-19.89999" pathPrecision="10" />
+			<MoveTo questId="1" x="1270.625" y="1030.424" z="-19.80936" pathPrecision="10" />
+			<MoveTo questId="1" x="1221.134" y="944.1177" z="-9.899998" pathPrecision="10" />
+			<MoveTo questId="1" x="1166.586" y="981.3585" z="-9.899996" pathPrecision="10" />
+			<MoveTo questId="1" x="1071.661" y="952.4813" z="-9.899996" pathPrecision="10" />
+			<MoveTo questId="1" x="1041.909" y="989.1411" z="-9.9" pathPrecision="10" />
+			<UseWaypoint questId="1" actorId="6442" x="1041.245" y="990.0298" z="-9.890291" waypointNumber="0" />
+		</If>
+		<!-- From Town -->
+		<WaitTimer questId="1" waitTime="5000" />
+		
+		<If condition="(not Me.IsInTown)">   
+			<UseTownPortal questId="1" />       
+		</If>
+		<Continue profile="Silhouettes_CursedTower.xml"/>
+	</Order>
+</Profile>
