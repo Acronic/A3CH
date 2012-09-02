@@ -79,7 +79,7 @@
 			<MoveTo questId="1" x="1411.29" y="599.9462" z="-24.9" pathPrecision="10" />
 			<MoveTo questId="1" x="1371.893" y="591.318" z="-24.40843" pathPrecision="10" />
 			<MoveTo questId="1" x="1371.358" y="583.7648" z="-24.777" pathPrecision="10" />
-			<!-- Bridge Stores -->
+			<!-- Bridge Stores  Check if elite in or out-->
 			<WaitTimer WaitTime="500" />
 			<If condition="ActorExistsAt(176001, 1373.309, 587.0353, -22.31143, 30)and ZetaDia.CurrentWorldId == 95804">
 				<WaitTimer WaitTime="500" />
