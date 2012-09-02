@@ -1,5 +1,9 @@
 <Profile>
+<<<<<<< HEAD
 	<Name>[A3 - Inferno]Champion-Hunting 1.0 Silhouettes - Rakkis Crossing South w/ Store <Name>
+=======
+	<Name>[A3 - Inferno]Champion-Hunting 1.0 Silhouettes - Rakkis Crossing South</Name>
+>>>>>>> A3CH/master
 	<KillMonsters>True</KillMonsters>
 	<PickupLoot>True</PickupLoot>
 	<GameParams quest="101758" step="1" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> 
@@ -31,6 +35,7 @@
 			<If condition="ActorExistsAt(176001, 1373.309, 587.0353, -22.31143, 30)and ZetaDia.CurrentWorldId == 95804">
 				<WaitTimer WaitTime="500" />
 				<UseObject questId="1" actorId="176001" interactrange="25" />
+<<<<<<< HEAD
 				<WaitTimer WaitTime="500" />
 				
 				<!-- Guy inside -->
@@ -45,14 +50,20 @@
 				
 				<!-- Elite inside -->
 				<If condition="Zeta.ZetaDia.CurrentWorldId==205422">
+=======
+				<WaitTimer WaitTime="1000" />
+>>>>>>> A3CH/master
 				<MoveTo questId="1" x="168.6867" y="41.3113" z="-11.8103" pathPrecision="10" />
 				<MoveTo questId="1" x="169.3341" y="87.11375" z="-24.1749" pathPrecision="10" />
 				<MoveTo questId="1" x="121.9488" y="75.70328" z="-24.9" pathPrecision="10" />
 				<MoveTo questId="1" x="169.5594" y="88.21939" z="-24.17553" pathPrecision="10" />
 				<MoveTo questId="1" x="171.034" y="42.417" z="-11.85881" pathPrecision="10" />
 				<MoveTo questId="1" x="101.3988" y="39.12692" z="0.1246951" pathPrecision="10" />	
+<<<<<<< HEAD
 				</If>
 
+=======
+>>>>>>> A3CH/master
 			</If>
 		</If>
 		<!-- From Waypoint -->
@@ -79,12 +90,17 @@
 			<MoveTo questId="1" x="1411.29" y="599.9462" z="-24.9" pathPrecision="10" />
 			<MoveTo questId="1" x="1371.893" y="591.318" z="-24.40843" pathPrecision="10" />
 			<MoveTo questId="1" x="1371.358" y="583.7648" z="-24.777" pathPrecision="10" />
+<<<<<<< HEAD
 			<!-- Bridge Stores  Check if elite in or out-->
+=======
+			<!-- Bridge Stores -->
+>>>>>>> A3CH/master
 			<WaitTimer WaitTime="500" />
 			<If condition="ActorExistsAt(176001, 1373.309, 587.0353, -22.31143, 30)and ZetaDia.CurrentWorldId == 95804">
 				<WaitTimer WaitTime="500" />
 				<UseObject questId="1" actorId="176001" interactrange="25" />
 				<WaitTimer WaitTime="500" />
+<<<<<<< HEAD
 				
 				<!-- Guy inside -->
 				<If condition="Zeta.ZetaDia.CurrentWorldId==140444">
@@ -98,15 +114,20 @@
 				
 				<!-- Elite inside -->
 				<If condition="Zeta.ZetaDia.CurrentWorldId==205422">
+=======
+>>>>>>> A3CH/master
 				<MoveTo questId="1" x="168.6867" y="41.3113" z="-11.8103" pathPrecision="10" />
 				<MoveTo questId="1" x="169.3341" y="87.11375" z="-24.1749" pathPrecision="10" />
 				<MoveTo questId="1" x="121.9488" y="75.70328" z="-24.9" pathPrecision="10" />
 				<MoveTo questId="1" x="169.5594" y="88.21939" z="-24.17553" pathPrecision="10" />
 				<MoveTo questId="1" x="171.034" y="42.417" z="-11.85881" pathPrecision="10" />
 				<MoveTo questId="1" x="101.3988" y="39.12692" z="0.1246951" pathPrecision="10" />	
+<<<<<<< HEAD
 				</If>
 
 
+=======
+>>>>>>> A3CH/master
 			</If>
 		</If>
 		<!-- From Town -->
