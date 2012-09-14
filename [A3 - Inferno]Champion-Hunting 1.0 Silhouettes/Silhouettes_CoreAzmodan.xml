@@ -34,14 +34,13 @@
 		
 				<WaitTimer questId="101758" stepId="1" waitTime="225000" /> 
 			</If>
-			<While condition="IsActiveQuest(101758) and IsActiveQuestStep(32)" >
-				<WaitTimer questId="1" waitTime="4500" />
-				<UseObject questId="1" actorId="201827"   />
-				<SkipCutscene questId="1" />
-			</While> 
-			<While condition="IsActiveQuest(101758) and IsActiveQuestStep(5)" >
-				<MoveTo questId="1" x="400.306" y="450.3678" z="0.1000033" pathPrecision="10" />
-			</While> 
+		<If condition="IsActiveQuest(101758) and IsActiveQuestStep(32)" >
+				<MoveTo questId="1" x="390.9271" y="393.5964" z="0.1000014" pathPrecision="10" />
+				<MoveTo questId="1" x="479.0075" y="422.4702" z="0.1734161" pathPrecision="10" />
+				<MoveTo questId="1" x="484.9087" y="483.4088" z="0.1734212" pathPrecision="10" />
+				<MoveTo questId="1" x="417.3651" y="483.5094" z="0.1734192" pathPrecision="10" />
+				<MoveTo questId="1" x="389.9103" y="435.9934" z="0.1" pathPrecision="10" />
+			</If> 
 		</If>
 		<!-- From Waypoint -->
 		<!-- Checkpoint In front of Azmodan -->
