@@ -28,7 +28,7 @@
 			<MoveTo questId="1" x="2941.555" y="822.644" z="0.1311852" pathPrecision="1" />
 			<MoveTo questId="1" x="2865.828" y="712.4584" z="0.1000005" pathPrecision="1" />
 			<MoveTo questId="1" x="3032.994" y="709.6021" z="0.0999997" pathPrecision="1" />
-			<MoveTo questId="1" x="3032.994" y="709.6021" z="0.0999997" pathPrecision="1" />
+			<MoveTo questId="1" x="2948.034" y="743.228" z="0.1" pathPrecision="1" />
 			<MoveTo questId="1" x="2812.105" y="429.4962" z="0.07882276" pathPrecision="1" />
 		</If>
 		<If condition="Zeta.ZetaDia.CurrentWorldId==172909">
@@ -55,7 +55,7 @@
 			<MoveTo questId="1" x="2941.555" y="822.644" z="0.1311852" pathPrecision="1" />
 			<MoveTo questId="1" x="2865.828" y="712.4584" z="0.1000005" pathPrecision="1" />
 			<MoveTo questId="1" x="3032.994" y="709.6021" z="0.0999997" pathPrecision="1" />
-			<MoveTo questId="1" x="3032.994" y="709.6021" z="0.0999997" pathPrecision="1" />
+			<MoveTo questId="1" x="2948.034" y="743.228" z="0.1" pathPrecision="1" />
 			<MoveTo questId="1" x="2812.105" y="429.4962" z="0.07882276" pathPrecision="1" />
 		</If>
 		<UseTownPortal questId="1" />
