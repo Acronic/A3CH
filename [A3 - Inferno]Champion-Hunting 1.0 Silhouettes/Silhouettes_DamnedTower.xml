@@ -34,11 +34,12 @@
 <MoveTo questId="1" x="1101.962" y="1138.224" z="-41.2337" pathPrecision="10" />
 <MoveTo questId="1" x="1129.661" y="1074.944" z="-64.44357" pathPrecision="10" />
 <MoveTo questId="1" x="1083.872" y="1038.083" z="-86.04954" pathPrecision="10" />
+<MoveTo questId="1" x="1083.822" y="1039.321" z="-86.08116" />
 		<!-- Entrance to Level 2 -->
 <WaitTimer WaitTime="500" />
 <If condition="ActorExistsAt(176001, 1086.002, 1043.2, -83.01437, 30)and ZetaDia.CurrentWorldId == 79401">
 <WaitTimer WaitTime="500" />
-<UseObject questId="1" actorId="176001" interactrange="25" />
+<UseObject questId="1" stepId="1" actorId="176001" isPortal="True" destinationWorldId="80763" interactRange="20" x="1086.002" y="1043.2" z="-83.01437" />
 <WaitTimer WaitTime="1000" />
 </If>	
 </If>	
@@ -53,7 +54,6 @@
 <MoveTo questId="1" x="882.5439" y="1051.578" z="-19.80381" pathPrecision="10" />
 <MoveTo questId="1" x="889.7587" y="1147.872" z="-29.9" pathPrecision="10" />
 <MoveTo questId="1" x="933.3544" y="1215.931" z="-29.9" pathPrecision="10" />
-
 <MoveTo questId="1" x="1004.621" y="1267.223" z="-30.13397" pathPrecision="10" />
 <MoveTo questId="1" x="1062.323" y="1280.042" z="-39.0773" pathPrecision="10" />
 <MoveTo questId="1" x="1108.178" y="1280.53" z="-39.9" pathPrecision="10" />
@@ -66,28 +66,24 @@
 <MoveTo questId="1" x="1214.136" y="1061.833" z="-19.9" pathPrecision="10" />
 <MoveTo questId="1" x="1280.614" y="1055.127" z="-19.9" pathPrecision="10" />
 <MoveTo questId="1" x="1280.831" y="1098.904" z="-19.79504" pathPrecision="10" />
-
 <MoveTo questId="1" x="1274.713" y="1038.114" z="-19.80936" pathPrecision="10" />
-
 <MoveTo questId="1" x="1212.932" y="929.4642" z="-9.9" pathPrecision="10" />
 <MoveTo questId="1" x="1171.131" y="989.9717" z="-9.899996" pathPrecision="10" />
 <MoveTo questId="1" x="1076.276" y="954.2126" z="-9.899998" pathPrecision="10" />
-
 <MoveTo questId="1" x="1029.802" y="966.6323" z="-9.9" pathPrecision="10" />
 <MoveTo questId="1" x="963.4457" y="1007.991" z="-19.9" pathPrecision="10" />
 <MoveTo questId="1" x="948.6082" y="1084.968" z="-29.9" pathPrecision="10" />
 <MoveTo questId="1" x="986.6281" y="1164.386" z="-29.9" pathPrecision="10" />
-
-
 <MoveTo questId="1" x="1040.019" y="1122.787" z="-39.90001" pathPrecision="10" />
 <MoveTo questId="1" x="1101.962" y="1138.224" z="-41.2337" pathPrecision="10" />
 <MoveTo questId="1" x="1129.661" y="1074.944" z="-64.44357" pathPrecision="10" />
 <MoveTo questId="1" x="1083.872" y="1038.083" z="-86.04954" pathPrecision="10" />
+<MoveTo questId="1" x="1083.822" y="1039.321" z="-86.08116" />
 		<!-- Entrance to Level 2 -->
 <WaitTimer WaitTime="500" />
 <If condition="ActorExistsAt(176001, 1086.002, 1043.2, -83.01437, 30)and ZetaDia.CurrentWorldId == 79401">
 <WaitTimer WaitTime="500" />
-<UseObject questId="1" actorId="176001" interactrange="25" />
+<UseObject questId="1" stepId="1" actorId="176001" isPortal="True" destinationWorldId="80763" interactRange="20" x="1086.002" y="1043.2" z="-83.01437" />
 <WaitTimer WaitTime="1000" />
 </If>
 </If>
