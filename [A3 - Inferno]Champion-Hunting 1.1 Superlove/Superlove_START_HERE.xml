@@ -1,5 +1,5 @@
 <Profile>
-	<Name>[A3 - Inferno]Champion-Hunting 1.0 Silhouettes Profile Starter!</Name>
+	<Name>[A3 - Inferno]Champion-Hunting 1.1 Superlove Profile Starter!</Name>
 	<KillMonsters>True</KillMonsters>
 	<PickupLoot>True</PickupLoot>
 	<GameParams quest="101758" step="1" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  />
@@ -8,6 +8,6 @@
 			<UseTownPortal questId="1" />       
 		</If>
 		<WaitTimer questId="1" waitTime="5000" />
-		<Continue profile="Silhouettes_Skycrown.xml" />
+		<Continue profile="Superlove_Skycrown.xml" backup="Superlove_START_HERE.xml" />
 	</Order>
 </Profile>

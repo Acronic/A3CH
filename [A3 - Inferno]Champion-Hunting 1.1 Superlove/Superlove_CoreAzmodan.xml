@@ -1,5 +1,5 @@
 <Profile>
-	<Name>[A3 - Inferno]Champion-Hunting 1.0 Silhouettes - Azmoddan - Arreat Core</Name>
+	<Name>[A3 - Inferno]Champion-Hunting 1.1 Superlove - Azmoddan - Arreat Core</Name>
 	<KillMonsters>True</KillMonsters>
 	<PickupLoot>True</PickupLoot>
 	<GameParams quest="101758" step="1" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> 
@@ -107,6 +107,6 @@
 		<UseTownPortal questId="1" />       
 		</If>
 		
-		<LeaveGame reason="Thanks for using Ciggarc's profiles! Feel free to donate to us so we can keep doing amazing projects!" />
+		<Continue profile="Superlove_START_HERE.xml" exitgame="true"/>
 	</Order>
 </Profile>
