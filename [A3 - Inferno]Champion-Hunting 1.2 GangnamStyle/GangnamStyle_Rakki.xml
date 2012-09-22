@@ -110,6 +110,6 @@
 			<UseTownPortal questId="1" />       
 		</If>
 		<WaitTimer questId="1" waitTime="5000" />
-		<Continue profile="GangnamStyle_DamnedTower.xml"  />
+		<Continue profile="GangnamStyle_Skycrown.xml"  />
 	</Order>
 </Profile>

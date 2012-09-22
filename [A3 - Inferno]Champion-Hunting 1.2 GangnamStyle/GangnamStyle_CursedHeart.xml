@@ -29,6 +29,6 @@
 		<If condition="(not Me.IsInTown)">   
 		<UseTownPortal questId="1" />       
 		</If>
-		<Continue profile="GangnamStyle_Skycrown.xml"/>
+		<Continue profile="GangnamStyle_Battlefields.xml"/>
 	</Order>
 </Profile>
