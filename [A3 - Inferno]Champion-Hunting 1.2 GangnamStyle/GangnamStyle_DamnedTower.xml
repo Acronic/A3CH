@@ -1,8 +1,8 @@
 <Profile>
-	<Name>[A3 - Inferno]Champion-Hunting 1.1 Superlove - Tower of the Damned Level 1 and 2</Name>
+	<Name>[A3 - Inferno]Champion-Hunting 1.2 GangnamStyle - Tower of the Damned Level 1 and 2</Name>
 	<KillMonsters>True</KillMonsters>
 	<PickupLoot>True</PickupLoot>
-	<GameParams quest="101758" step="1" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> 
+	<GameParams quest="101758" step="29" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> 
 	<Order>
 		<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="45" />
 		<!-- From Waypoint -->
@@ -126,6 +126,15 @@
 			<MoveTo questId="1" x="1272.309" y="1005.207" z="-69.16975" pathPrecision="10" />
 			<MoveTo questId="1" x="1176.806" y="896.7028" z="-79.9" pathPrecision="10" />
 			<MoveTo questId="1" x="1093.641" y="880.9343" z="-107.5034" pathPrecision="10" />
+			<MoveTo questId="1" x="1083.702" y="884.1192" z="-111.8278"  />
+			
+			<!-- Entrance to Heart of the Damned -->
+			<WaitTimer WaitTime="500" />
+			<If condition="ActorExistsAt(176001, 1080.005, 883.4227, -112.3811, 30)and ZetaDia.CurrentWorldId == 80763">
+				<WaitTimer WaitTime="500" />
+				<UseObject questId="1" stepId="1" actorId="176001" isPortal="True" destinationWorldId="85201" interactRange="20" x="1080.005" y="883.4227" z="-112.3811" />
+				<WaitTimer WaitTime="1000" />
+			</If>
 		</If>
 
 
@@ -200,6 +209,15 @@
 			<MoveTo questId="1" x="1085.343" y="1145.268" z="-29.8858" pathPrecision="10" />
 			<MoveTo questId="1" x="1138.507" y="1085.164" z="-50.98008" pathPrecision="10" />
 			<MoveTo questId="1" x="1087.311" y="1038.126" z="-75.05704" pathPrecision="10" />
+			<MoveTo questId="1" x="1084.783" y="1043.206" z="-75.972" />
+			
+			<!-- Entrance to Heart of the Damned -->
+			<WaitTimer WaitTime="500" />
+			<If condition="ActorExistsAt(176001, 1080.005, 1040.572, -67.72293, 30)and ZetaDia.CurrentWorldId == 80763">
+				<WaitTimer WaitTime="500" />
+				<UseObject questId="1" stepId="1" actorId="176001" isPortal="True" destinationWorldId="85201" interactRange="20" x="1080.005" y="1040.572" z="-67.72293" />
+				<WaitTimer WaitTime="1000" />
+			</If>
 		</If>
 
 		<If condition="ActorExistsAt(3795, 901.4346, 1151.008, 11.92223, 30) and Zeta.ZetaDia.CurrentWorldId==80763">
@@ -235,11 +253,9 @@
 			<MoveTo questId="1" x="1087.311" y="1038.126" z="-75.05704" pathPrecision="10" />
 		</If>
 
-		<If condition="(not Me.IsInTown)">   
-			<UseTownPortal questId="1" />       
-		</If>
+		<!-- Load Heart of the Damned -->
 		<WaitTimer questId="1" waitTime="5000" />
-		<Continue profile="Superlove_CursedTower.xml"/>
+		<Continue profile="GangnamStyle_DamnedHeart.xml"/>
 	</Order>
 </Profile>
 

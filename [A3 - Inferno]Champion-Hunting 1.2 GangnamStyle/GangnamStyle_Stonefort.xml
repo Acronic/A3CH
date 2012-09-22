@@ -1,8 +1,8 @@
 <Profile>
-	<Name>[A3 - Inferno]Champion-Hunting 1.1 Superlove - The Skycrown Battlements</Name>
+	<Name>[A3 - Inferno]Champion-Hunting 1.2 GangnamStyle - The Skycrown Battlements</Name>
 	<KillMonsters>True</KillMonsters>
 	<PickupLoot>True</PickupLoot>
-	<GameParams quest="101758" step="1" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> // Heart of Sin - Kill Azmodan
+	<GameParams quest="101758" step="29" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> 
 	<Order>
 		<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="45" />
 
@@ -217,6 +217,6 @@
 			<UseTownPortal questId="1" />       
 		</If>		
 		<WaitTimer questId="1" waitTime="5000" />
-		<Continue profile="Superlove_Battlefields.xml"/>
+		<Continue profile="GangnamStyle_CoreOnly.xml"/>
 	</Order>
 </Profile>

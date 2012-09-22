@@ -1,0 +1,157 @@
+<Profile>
+	<Name>[A3 - Inferno]Champion-Hunting 1.2 GangnamStyle - Tower of the Cursed Level 1 and 2 </Name>
+	<KillMonsters>True</KillMonsters>
+	<PickupLoot>True</PickupLoot>
+	<GameParams quest="101758" step="29" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> 
+	<Order>
+		<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="45" />
+		<!-- From Waypoint -->
+		<If condition="ActorExistsAt(6442, 959.4044, 1097.87, -9.899994, 40)"> 
+			<MoveTo questId="1" x="957.6979" y="1044.275" z="-9.899996" pathPrecision="10" />
+			<MoveTo questId="1" x="1001.201" y="973.7556" z="-9.899996" pathPrecision="10" />
+			<MoveTo questId="1" x="966.1538" y="933.5219" z="-9.899996" pathPrecision="10" />
+			<MoveTo questId="1" x="904.4791" y="985.8871" z="0.1" pathPrecision="10" />
+			<MoveTo questId="1" x="963.7224" y="930.3068" z="-9.899998" pathPrecision="10" />
+			<MoveTo questId="1" x="1001.098" y="976.9585" z="-9.899996" pathPrecision="10" />
+			<MoveTo questId="1" x="1066.626" y="947.7541" z="-19.89999" pathPrecision="10" />
+			<MoveTo questId="1" x="1055.695" y="885.308" z="-19.89999" pathPrecision="10" />
+			<MoveTo questId="1" x="1148.401" y="888.9555" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="1242.757" y="961.3666" z="-39.83155" pathPrecision="10" />
+			<MoveTo questId="1" x="1160.063" y="1029.877" z="-39.9" pathPrecision="10" />
+			<MoveTo questId="1" x="1082.16" y="1010.361" z="-38.78577" pathPrecision="10" />
+			<MoveTo questId="1" x="1043.416" y="1044.922" z="-39.89999" pathPrecision="10" />
+			<MoveTo questId="1" x="1079.037" y="1012.34" z="-38.78078" pathPrecision="10" />
+			<MoveTo questId="1" x="1158.683" y="1025.501" z="-39.36169" pathPrecision="10" />
+			<MoveTo questId="1" x="1235.36" y="1048.303" z="-39.9" pathPrecision="10" />
+			<MoveTo questId="1" x="1278.857" y="1043.95" z="-39.87459" pathPrecision="10" />
+			<MoveTo questId="1" x="1284.496" y="1092.059" z="-49.04857" pathPrecision="10" />
+			<MoveTo questId="1" x="1255.041" y="1092.443" z="-49.89999" pathPrecision="10" />
+			<MoveTo questId="1" x="1239.875" y="1154.217" z="-48.90098" pathPrecision="10" />
+			<MoveTo questId="1" x="1240.023" y="1204.526" z="-49.20887" pathPrecision="10" />
+			<MoveTo questId="1" x="1164.191" y="1266.927" z="-59.10257" pathPrecision="10" />
+			<MoveTo questId="1" x="1119.09" y="1250.593" z="-59.89999" pathPrecision="10" />
+			<MoveTo questId="1" x="1041.561" y="1248.618" z="-59.89999" pathPrecision="10" />
+			<MoveTo questId="1" x="980.335" y="1212.599" z="-59.89999" pathPrecision="10" />
+			<MoveTo questId="1" x="1054.821" y="1125.832" z="-69.82961" pathPrecision="10" />
+			<MoveTo questId="1" x="1100.408" y="1140.312" z="-80.07538" pathPrecision="10" />
+			<MoveTo questId="1" x="1113.296" y="1040.255" z="-114.508" pathPrecision="10" />
+			<MoveTo questId="1" x="1083.527" y="1040.308" z="-123.5041" pathPrecision="1" />
+			<!-- Entrance to Level 2 -->
+			<WaitTimer WaitTime="500" />
+			<If condition="ActorExistsAt(176001, 1092.107, 1040.87, -120.625, 30)and ZetaDia.CurrentWorldId == 119641">
+				<WaitTimer WaitTime="500" />
+				<UseObject questId="1" stepId="1" actorId="176001" isPortal="True" destinationWorldId="139272" interactRange="20" x="1092.107" y="1040.87" z="-120.625" />
+				<WaitTimer WaitTime="1000" />
+			</If>	
+		</If>	
+		<!-- From Town -->
+		<If condition="Zeta.ZetaDia.CurrentWorldId==172909">
+			<UseWaypoint questId="1" actorId="6442" x="402.5403" y="414.342" z="1.5338" waypointNumber="9" />
+			<MoveTo questId="1" x="957.6979" y="1044.275" z="-9.899996" pathPrecision="10" />
+			<MoveTo questId="1" x="1001.201" y="973.7556" z="-9.899996" pathPrecision="10" />
+			<MoveTo questId="1" x="966.1538" y="933.5219" z="-9.899996" pathPrecision="10" />
+			<MoveTo questId="1" x="904.4791" y="985.8871" z="0.1" pathPrecision="10" />
+			<MoveTo questId="1" x="963.7224" y="930.3068" z="-9.899998" pathPrecision="10" />
+			<MoveTo questId="1" x="1001.098" y="976.9585" z="-9.899996" pathPrecision="10" />
+			<MoveTo questId="1" x="1066.626" y="947.7541" z="-19.89999" pathPrecision="10" />
+			<MoveTo questId="1" x="1055.695" y="885.308" z="-19.89999" pathPrecision="10" />
+			<MoveTo questId="1" x="1148.401" y="888.9555" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="1242.757" y="961.3666" z="-39.83155" pathPrecision="10" />
+			<MoveTo questId="1" x="1160.063" y="1029.877" z="-39.9" pathPrecision="10" />
+			<MoveTo questId="1" x="1082.16" y="1010.361" z="-38.78577" pathPrecision="10" />
+			<MoveTo questId="1" x="1043.416" y="1044.922" z="-39.89999" pathPrecision="10" />
+			<MoveTo questId="1" x="1079.037" y="1012.34" z="-38.78078" pathPrecision="10" />
+			<MoveTo questId="1" x="1158.683" y="1025.501" z="-39.36169" pathPrecision="10" />
+			<MoveTo questId="1" x="1235.36" y="1048.303" z="-39.9" pathPrecision="10" />
+			<MoveTo questId="1" x="1278.857" y="1043.95" z="-39.87459" pathPrecision="10" />
+			<MoveTo questId="1" x="1284.496" y="1092.059" z="-49.04857" pathPrecision="10" />
+			<MoveTo questId="1" x="1255.041" y="1092.443" z="-49.89999" pathPrecision="10" />
+			<MoveTo questId="1" x="1239.875" y="1154.217" z="-48.90098" pathPrecision="10" />
+			<MoveTo questId="1" x="1240.023" y="1204.526" z="-49.20887" pathPrecision="10" />
+			<MoveTo questId="1" x="1164.191" y="1266.927" z="-59.10257" pathPrecision="10" />
+			<MoveTo questId="1" x="1119.09" y="1250.593" z="-59.89999" pathPrecision="10" />
+			<MoveTo questId="1" x="1041.561" y="1248.618" z="-59.89999" pathPrecision="10" />
+			<MoveTo questId="1" x="980.335" y="1212.599" z="-59.89999" pathPrecision="10" />
+			<MoveTo questId="1" x="1054.821" y="1125.832" z="-69.82961" pathPrecision="10" />
+			<MoveTo questId="1" x="1100.408" y="1140.312" z="-80.07538" pathPrecision="10" />
+			<MoveTo questId="1" x="1113.296" y="1040.255" z="-114.508" pathPrecision="10" />
+			<MoveTo questId="1" x="1083.527" y="1040.308" z="-123.5041" pathPrecision="1" />
+			<!-- Entrance to Level 2 -->
+			<WaitTimer WaitTime="500" />
+			<If condition="ActorExistsAt(176001, 1092.107, 1040.87, -120.625, 30)and ZetaDia.CurrentWorldId == 119641">
+				<WaitTimer WaitTime="500" />
+				<UseObject questId="1" stepId="1" actorId="176001" isPortal="True" destinationWorldId="139272" interactRange="20" x="1092.107" y="1040.87" z="-120.625" />
+				<WaitTimer WaitTime="1000" />
+			</If>	
+		</If>
+		
+		<!-- Lvl2A -->
+		<If condition="ActorExistsAt(176001, 848.2521, 1127.528, 82.0196, 30) and Zeta.ZetaDia.CurrentWorldId==139272">
+			<MoveTo questId="1" x="906.132" y="1154.222" z="50.6262" pathPrecision="10" />
+			<MoveTo questId="1" x="946.5782" y="1188.401" z="50.10001" pathPrecision="10" />
+			<MoveTo questId="1" x="1033.498" y="1266.404" z="49.39633" pathPrecision="10" />
+			<MoveTo questId="1" x="1131.745" y="1276.814" z="40.24468" pathPrecision="10" />
+			<MoveTo questId="1" x="1212.814" y="1218.418" z="30.18352" pathPrecision="10" />
+			<MoveTo questId="1" x="1265.971" y="1117.822" z="20.1" pathPrecision="10" />
+			<MoveTo questId="1" x="1247.246" y="1028.094" z="10.1" pathPrecision="10" />
+			<MoveTo questId="1" x="1199.308" y="1032.22" z="10.1" pathPrecision="10" />
+			<MoveTo questId="1" x="1154.346" y="966.1526" z="0.09999939" pathPrecision="10" />
+			<MoveTo questId="1" x="1201.514" y="940.131" z="0.0999998" pathPrecision="10" />
+			<MoveTo questId="1" x="1132.178" y="892.2405" z="0.09999904" pathPrecision="10" />
+			<MoveTo questId="1" x="1101.805" y="979.7287" z="1.117578" pathPrecision="10" />
+			<MoveTo questId="1" x="1051.53" y="1029.761" z="0.09999809" pathPrecision="10" />
+			<MoveTo questId="1" x="1011.766" y="891.1295" z="0.09999796" pathPrecision="10" />
+			<MoveTo questId="1" x="965.3593" y="930.8084" z="0.09999669" pathPrecision="10" />
+			<MoveTo questId="1" x="996.1601" y="998.1313" z="0.1000002" pathPrecision="10" />
+			<MoveTo questId="1" x="912.169" y="1063.098" z="0.1000001" pathPrecision="10" />
+			<MoveTo questId="1" x="1004.612" y="1098.036" z="-8.133423" pathPrecision="10" />
+			<MoveTo questId="1" x="1075.926" y="1154.965" z="-29.9" pathPrecision="10" />
+			<MoveTo questId="1" x="1120.435" y="1061.716" z="-60.48213" pathPrecision="10" />
+			<MoveTo questId="1" x="1083.328" y="1040.23" z="-76.50092" />
+			<!-- Entrance to Heart of the Cursed -->
+			<WaitTimer WaitTime="500" />
+			<If condition="ActorExistsAt(161278, 1083.051, 1043.106, -70.48186, 30)and ZetaDia.CurrentWorldId == 139272">
+				<WaitTimer WaitTime="500" />
+				<UseObject questId="1" stepId="1" actorId="161278" isPortal="True" destinationWorldId="119650" interactRange="40" x="1083.051" y="1043.106" z="-70.48186" />
+				<WaitTimer WaitTime="1000" />
+			</If>
+		</If>
+		
+		<!-- Lvl2B -->
+		<If condition="ActorExistsAt(176001, 1038.255, 1080.005, 34.83162, 30) and Zeta.ZetaDia.CurrentWorldId==139272">
+			<MoveTo questId="1" x="1082.938" y="1143.465" z="2.394388" pathPrecision="10" />
+			<MoveTo questId="1" x="1151.957" y="1257.191" z="-9.765685" pathPrecision="10" />
+			<MoveTo questId="1" x="1042.173" y="1244.678" z="-8.89151" pathPrecision="10" />
+			<MoveTo questId="1" x="1027.951" y="1185.282" z="-9.899998" pathPrecision="10" />
+			<MoveTo questId="1" x="975.8146" y="1225.179" z="-9.899996" pathPrecision="10" />
+			<MoveTo questId="1" x="974.1674" y="1141.897" z="-9.899998" pathPrecision="10" />
+			<MoveTo questId="1" x="911.1346" y="1184.096" z="-9.716587" pathPrecision="10" />
+			<MoveTo questId="1" x="886.722" y="1116.846" z="-19.9" pathPrecision="10" />
+			<MoveTo questId="1" x="953.0561" y="1103.112" z="-9.899994" pathPrecision="10" />
+			<MoveTo questId="1" x="879.7136" y="1085.018" z="-19.9" pathPrecision="10" />
+			<MoveTo questId="1" x="922.3269" y="955.9869" z="-20.28478" pathPrecision="10" />
+			<MoveTo questId="1" x="1046.344" y="889.9045" z="-29.85756" pathPrecision="10" />
+			<MoveTo questId="1" x="1058.472" y="992.7385" z="-29.56412" pathPrecision="10" />
+			<MoveTo questId="1" x="1123.742" y="1050.002" z="-29.7931" pathPrecision="10" />
+			<MoveTo questId="1" x="1249.246" y="984.3205" z="-49.81208" pathPrecision="10" />
+			<MoveTo questId="1" x="1282.313" y="1082.097" z="-39.9" pathPrecision="10" />
+			<MoveTo questId="1" x="1281.443" y="1151.718" z="-39.10296" pathPrecision="10" />
+			<MoveTo questId="1" x="1248.691" y="1182.664" z="-39.8193" pathPrecision="10" />
+			<MoveTo questId="1" x="1139.829" y="1111.834" z="-28.84492" pathPrecision="10" />
+			<MoveTo questId="1" x="1278.372" y="1080.312" z="-39.9" pathPrecision="10" />
+			<MoveTo questId="1" x="1186.632" y="905.5083" z="-59.9" pathPrecision="10" />
+			<MoveTo questId="1" x="1120.826" y="884.6321" z="-75.28958" pathPrecision="10" />
+			<MoveTo questId="1" x="1084.524" y="887.4499" z="-91.71507" />
+			<!-- Entrance to Heart of the Cursed -->
+			<WaitTimer WaitTime="500" />
+			<If condition="ActorExistsAt(161278, 1080.139, 888.6223, -62.22284, 30)and ZetaDia.CurrentWorldId == 139272">
+				<WaitTimer WaitTime="500" />
+				<UseObject questId="1" stepId="1" actorId="161278" isPortal="True" destinationWorldId="119650" interactRange="30" x="1080.139" y="888.6223" z="-62.22284" />
+				<WaitTimer WaitTime="1000" />
+			</If>
+		</If>
+		
+		<WaitTimer questId="1" waitTime="5000" />
+		<Continue profile="GangnamStyle_CursedHeart.xml"/>
+	</Order>
+</Profile>
