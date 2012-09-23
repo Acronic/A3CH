@@ -216,6 +216,9 @@
 		<If condition="(not Me.IsInTown)">   
 			<UseTownPortal questId="1" />       
 		</If>		
+		<If condition="IsActiveQuest(101758) and IsActiveQuestStep(29)">
+			<Continue profile="GangnamStyle_START_HERE.xml" exitgame="true"/>
+		</If>
 		<WaitTimer questId="1" waitTime="5000" />
 		<Continue profile="GangnamStyle_CoreOnly.xml"/>
 	</Order>
