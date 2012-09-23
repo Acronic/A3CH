@@ -22,7 +22,7 @@
 				<WaitTimer WaitTime="1000" />
 			</If>
 		
-		<!-- Check to see if we are in Heart of the Cursed; load core if we are not -->
+		<!-- Check to see if we are in Heart of the Cursed; load Battlefields if we are not -->
 		<If condition="(not Zeta.ZetaDia.CurrentWorldId==119650)">
 			<UseTownPortal questId="1" />       
 			<WaitTimer questId="1" waitTime="5000" />
