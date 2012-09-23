@@ -5,6 +5,29 @@
 	<GameParams quest="101758" step="29" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  />
 	<Order>
 		<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="200" killRadius="200" />
+		
+		<!-- Check to see if we are in front of Heart of the Cursed Version1; click portal if so -->
+			<If condition="ActorExistsAt(161278, 1080.139, 888.6223, -62.22284, 30)and ZetaDia.CurrentWorldId == 139272">
+				<MoveTo questId="1" x="1084.524" y="887.4499" z="-91.71507" />
+				<WaitTimer WaitTime="500" />
+				<UseObject questId="1" stepId="1" actorId="161278" isPortal="True" destinationWorldId="119650" interactRange="30" x="1080.139" y="888.6223" z="-62.22284" />
+				<WaitTimer WaitTime="1000" />
+			</If>
+			
+		<!-- Check to see if we are in front of Heart of the Cursed Version2; click portal if so -->
+			<If condition="ActorExistsAt(161278, 1083.051, 1043.106, -70.48186, 30)and ZetaDia.CurrentWorldId == 139272">
+				<MoveTo questId="1" x="1083.328" y="1040.23" z="-76.50092" />
+				<WaitTimer WaitTime="500" />
+				<UseObject questId="1" stepId="1" actorId="161278" isPortal="True" destinationWorldId="119650" interactRange="40" x="1083.051" y="1043.106" z="-70.48186" />
+				<WaitTimer WaitTime="1000" />
+			</If>
+		
+		<!-- Check to see if we are in Heart of the Cursed; load core if we are not -->
+		<If condition="(not Zeta.ZetaDia.CurrentWorldId==119650)">
+			<UseTownPortal questId="1" />       
+			<WaitTimer questId="1" waitTime="5000" />
+			<Continue profile="GangnamStyle_Battlefields.xml"/>
+		</If>	
 		<!-- Start of Heart of Cursed -->
 		<If condition="Zeta.ZetaDia.CurrentWorldId==119650">
 			<MoveTo questId="1" x="1047.614" y="1279.675" z="40.19239" pathPrecision="10" />
