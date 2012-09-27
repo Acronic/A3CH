@@ -1,0 +1,57 @@
+<Profile>
+	<Name>[A3 - Inferno]Champion-Hunting 1.2 GangnamStyle - Heart of the Cursed</Name>
+	<KillMonsters>True</KillMonsters>
+	<PickupLoot>True</PickupLoot>
+	<GameParams quest="101758" step="29" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  />
+	<Order>
+		<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="200" killRadius="200" />
+		
+		<!-- Check to see if we are in front of Heart of the Cursed Version1; click portal if so -->
+			<If condition="ActorExistsAt(161278, 1080.139, 888.6223, -62.22284, 30)and ZetaDia.CurrentWorldId == 139272">
+				<MoveTo questId="1" x="1084.524" y="887.4499" z="-91.71507" />
+				<WaitTimer WaitTime="500" />
+				<UseObject questId="1" stepId="1" actorId="161278" isPortal="True" destinationWorldId="119650" interactRange="30" x="1080.139" y="888.6223" z="-62.22284" />
+				<WaitTimer WaitTime="1000" />
+			</If>
+			
+		<!-- Check to see if we are in front of Heart of the Cursed Version2; click portal if so -->
+			<If condition="ActorExistsAt(161278, 1083.051, 1043.106, -70.48186, 30)and ZetaDia.CurrentWorldId == 139272">
+				<MoveTo questId="1" x="1083.328" y="1040.23" z="-76.50092" />
+				<WaitTimer WaitTime="500" />
+				<UseObject questId="1" stepId="1" actorId="161278" isPortal="True" destinationWorldId="119650" interactRange="40" x="1083.051" y="1043.106" z="-70.48186" />
+				<WaitTimer WaitTime="1000" />
+			</If>
+		
+		<!-- Check to see if we are in Heart of the Cursed; load Battlefields if we are not -->
+		<If condition="(not Zeta.ZetaDia.CurrentWorldId==119650)">
+			<UseTownPortal questId="1" />       
+			<WaitTimer questId="1" waitTime="5000" />
+			<Continue profile="GangnamStyle_Battlefields.xml"/>
+		</If>	
+		<!-- Start of Heart of Cursed -->
+		<If condition="Zeta.ZetaDia.CurrentWorldId==119650">
+			<MoveTo questId="1" x="1047.614" y="1279.675" z="40.19239" pathPrecision="10" />
+			<MoveTo questId="1" x="1148.76" y="1270.359" z="40.1" pathPrecision="10" />
+			<MoveTo questId="1" x="1219.801" y="1221.462" z="40.33031" pathPrecision="10" />
+			<MoveTo questId="1" x="1271.218" y="1138.841" z="40.1" pathPrecision="10" />
+			<MoveTo questId="1" x="1270.786" y="1088.514" z="40.50775" pathPrecision="10" />
+			<MoveTo questId="1" x="1213.249" y="1076.738" z="16.74862" pathPrecision="10" />
+			<MoveTo questId="1" x="1159.117" y="1078.982" z="0.1000016" pathPrecision="10" />
+			<!-- Kill Cydaea -->
+			<SkipCutscene questId="1" />
+			<While condition="IsActiveQuest(101758) and IsActiveQuestStep(23)" >
+				<MoveTo questId="1" x="1159.117" y="1078.982" z="0.1000016" pathPrecision="10" />
+			</While> 
+		</If>
+		<WaitTimer questId="1" waitTime="5000"/>
+		<MoveTo questId="1" x="1095.681" y="1133.646" z="0.100001" pathPrecision="10" />
+		<MoveTo questId="1" x="1048.687" y="1097.217" z="0.1000009" pathPrecision="10" />
+		<MoveTo questId="1" x="1104.601" y="1033.542" z="0.1000016" pathPrecision="10" />
+		<MoveTo questId="1" x="1149.991" y="1108.341" z="0.1000038" pathPrecision="10" />
+		
+		<If condition="(not Me.IsInTown)">   
+		<UseTownPortal questId="1" />       
+		</If>
+		<Continue profile="GangnamStyle_Battlefields.xml"/>
+	</Order>
+</Profile>

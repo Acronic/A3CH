@@ -1,0 +1,49 @@
+<Profile>
+	<Name>[A3 - Inferno]Champion-Hunting 1.2 GangnamStyle - Battlefields</Name>
+	<KillMonsters>True</KillMonsters>
+	<PickupLoot>True</PickupLoot>
+	<GameParams quest="101758" step="29" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  />
+	<Order>
+		<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="45" />
+		<If condition="ActorExistsAt(3795, 4152.844, 403.6133, -2.393509, 50)">
+			<MoveTo questId="1" x="4027.575" y="442.6552" z="0.100001" pathPrecision="1" />
+			<MoveTo questId="1" x="4015.883" y="361.2677" z="0.2000023" pathPrecision="1" />
+			<MoveTo questId="1" x="3911.02" y="360.6955" z="0.2000004" pathPrecision="1" />
+			<MoveTo questId="1" x="3782.654" y="437.2826" z="0.1000017" pathPrecision="1" />
+			<MoveTo questId="1" x="3822.948" y="697.386" z="0.09998765" pathPrecision="1" />
+			<MoveTo questId="1" x="3822.213" y="770.575" z="0.1000002" pathPrecision="1" />
+			<MoveTo questId="1" x="4005.475" y="723.7015" z="0.09999994" pathPrecision="1" />
+			<MoveTo questId="1" x="3959.794" y="851.3557" z="0.1000001" pathPrecision="1" />
+			<MoveTo questId="1" x="4209.848" y="621.9036" z="0.1" pathPrecision="1" />
+			<MoveTo questId="1" x="4208.532" y="549.4142" z="0.1000133" pathPrecision="1" />
+		</If>
+		<If condition="Zeta.ZetaDia.CurrentWorldId==172909">
+			<MoveTo questId="1" x="347.1507" y="410.863" z="0.1557077" pathPrecision="1" />
+			<MoveTo questId="1" x="308.0829" y="357.6208" z="0.1000001" pathPrecision="1" />
+			<MoveTo questId="1" x="201.4383" y="378.1957" z="0.2451056" pathPrecision="1" />
+			<MoveTo questId="1" x="126.4189" y="358.7215" z="0.1824233" pathPrecision="1" />
+			<UseObject questId="1" actorId="176001" isPortal="True" destinationWorldId="95804" />
+			<MoveTo questId="1" x="4445.858" y="227.1462" z="47.09999" pathPrecision="1" />
+			<MoveTo questId="1" x="4405.33" y="253.4161" z="47.1" pathPrecision="1" />
+			<MoveTo questId="1" x="4399.848" y="340.5641" z="22.24511" pathPrecision="1" />
+			<MoveTo questId="1" x="4338.58" y="341.3957" z="22.23087" pathPrecision="1" />
+			<MoveTo questId="1" x="4323.95" y="357.2052" z="22.35308" pathPrecision="1" />
+			<MoveTo questId="1" x="4323.178" y="403.3494" z="-2.754892" pathPrecision="1" />
+			<MoveTo questId="1" x="4161.829" y="397.4526" z="-2.293509" pathPrecision="1" />
+			<MoveTo questId="1" x="4161.829" y="397.4526" z="-2.293509" pathPrecision="1" />
+			<MoveTo questId="1" x="4027.575" y="442.6552" z="0.100001" pathPrecision="1" />
+			<MoveTo questId="1" x="4015.883" y="361.2677" z="0.2000023" pathPrecision="1" />
+			<MoveTo questId="1" x="3911.02" y="360.6955" z="0.2000004" pathPrecision="1" />
+			<MoveTo questId="1" x="3782.654" y="437.2826" z="0.1000017" pathPrecision="1" />
+			<MoveTo questId="1" x="3822.948" y="697.386" z="0.09998765" pathPrecision="1" />
+			<MoveTo questId="1" x="3822.213" y="770.575" z="0.1000002" pathPrecision="1" />
+			<MoveTo questId="1" x="4005.475" y="723.7015" z="0.09999994" pathPrecision="1" />
+			<MoveTo questId="1" x="3959.794" y="851.3557" z="0.1000001" pathPrecision="1" />
+			<MoveTo questId="1" x="4209.848" y="621.9036" z="0.1" pathPrecision="1" />
+			<MoveTo questId="1" x="4208.532" y="549.4142" z="0.1000133" pathPrecision="1" />
+		</If>
+		<UseTownPortal questId="1" />
+		<WaitTimer questId="1" waitTime="5000" />
+		<Continue profile="GangnamStyle_FieldsofSlaughter.xml"/>
+	</Order>
+</Profile>
