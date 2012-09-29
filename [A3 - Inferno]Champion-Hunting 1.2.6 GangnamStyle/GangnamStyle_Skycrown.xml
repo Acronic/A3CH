@@ -99,7 +99,9 @@
 			<MoveTo questId="1" x="286.0547" y="354.1901" z="0.6358567" pathPrecision="10" />
 			<MoveTo questId="1" x="198.272" y="378.0479" z="0.2451051" pathPrecision="10" />
 			<MoveTo questId="1" x="193.2065" y="456.8979" z="0.2451111" pathPrecision="10" />
-			<MoveTo questId="1" x="158.6004" y="459.7886" z="0.2451034" pathPrecision="1" />
+			<MoveTo questId="1" x="158.6004" y="459.7886" z="0.2451034" pathPrecision="10" />
+			<MoveTo questId="1" x="158.7898" y="456.0031" z="0.2451034" />
+			<WaitTimer questId="1" waitTime="500" />
 			<UseObject questId="1" stepId="1" actorId="176001" isPortal="True" destinationWorldId="81019" x="154.5878" y="457.2349" z="1.39289" />
 			<MoveTo questId="1" x="3806.902" y="3786.704" z="-24.71773" pathPrecision="10" />
 			<MoveTo questId="1" x="3778.832" y="3785.78" z="-24.71773" pathPrecision="10" />

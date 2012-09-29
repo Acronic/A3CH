@@ -8,8 +8,9 @@
 		<!-- From Waypoint -->
 		<If condition="ActorExistsAt(6442, 913.334, 583.4025, 0.3031104, 40)"> 
 			<MoveTo questId="1" x="985.5276" y="579.5453" z="0.3501447" pathPrecision="10" />
-			<MoveTo questId="1" x="992.4396" y="556.4188" z="0.2265503" pathPrecision="10" />
-			<MoveTo questId="1" x="1050.989" y="561.8228" z="-24.41289" pathPrecision="10" />
+			<MoveTo questId="1" x="992.4396" y="556.4188" z="1.7265503" pathPrecision="3" />
+			<MoveTo questId="1" x="1021.487" y="558.4782" z="-10.35794" pathPrecision="3" />
+			<MoveTo questId="1" x="1050.989" y="561.8228" z="-23.41289" pathPrecision="3" />
 			<MoveTo questId="1" x="1050.572" y="591.9965" z="-24.46794" pathPrecision="10" />
 			<MoveTo questId="1" x="1125.261" y="627.1517" z="-24.9" pathPrecision="10" />
 			<MoveTo questId="1" x="1180.885" y="594.4463" z="-24.9" pathPrecision="10" />

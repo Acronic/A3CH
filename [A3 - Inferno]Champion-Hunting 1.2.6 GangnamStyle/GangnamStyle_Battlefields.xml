@@ -22,6 +22,8 @@
 			<MoveTo questId="1" x="308.0829" y="357.6208" z="0.1000001" pathPrecision="1" />
 			<MoveTo questId="1" x="201.4383" y="378.1957" z="0.2451056" pathPrecision="1" />
 			<MoveTo questId="1" x="126.4189" y="358.7215" z="0.1824233" pathPrecision="1" />
+			<MoveTo questId="1" x="126.1338" y="356.9972" z="0.1658887" />
+			<WaitTimer questId="1" waitTime="500" />
 			<UseObject questId="1" actorId="176001" isPortal="True" destinationWorldId="95804" />
 			<MoveTo questId="1" x="4445.858" y="227.1462" z="47.09999" pathPrecision="1" />
 			<MoveTo questId="1" x="4405.33" y="253.4161" z="47.1" pathPrecision="1" />
@@ -30,9 +32,11 @@
 			<MoveTo questId="1" x="4323.95" y="357.2052" z="22.35308" pathPrecision="1" />
 			<MoveTo questId="1" x="4323.178" y="403.3494" z="-2.754892" pathPrecision="1" />
 			<MoveTo questId="1" x="4161.829" y="397.4526" z="-2.293509" pathPrecision="1" />
-			<MoveTo questId="1" x="4161.829" y="397.4526" z="-2.293509" pathPrecision="1" />
 			<MoveTo questId="1" x="4027.575" y="442.6552" z="0.100001" pathPrecision="1" />
 			<MoveTo questId="1" x="4015.883" y="361.2677" z="0.2000023" pathPrecision="1" />
+			<MoveTo questId="1" x="3988.317" y="352.6889" z="0.1999999" pathPrecision="5" />
+			<MoveTo questId="1" x="3953.61" y="350.6971" z="0.1999999" pathPrecision="5" />
+			<MoveTo questId="1" x="3917.116" y="362.628" z="0.2" pathPrecision="5" />
 			<MoveTo questId="1" x="3911.02" y="360.6955" z="0.2000004" pathPrecision="1" />
 			<MoveTo questId="1" x="3782.654" y="437.2826" z="0.1000017" pathPrecision="1" />
 			<MoveTo questId="1" x="3822.948" y="697.386" z="0.09998765" pathPrecision="1" />
