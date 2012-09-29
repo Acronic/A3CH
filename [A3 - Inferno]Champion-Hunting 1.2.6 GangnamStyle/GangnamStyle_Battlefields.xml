@@ -43,6 +43,8 @@
 			<MoveTo questId="1" x="3822.213" y="770.575" z="0.1000002" pathPrecision="1" />
 			<MoveTo questId="1" x="4005.475" y="723.7015" z="0.09999994" pathPrecision="1" />
 			<MoveTo questId="1" x="3959.794" y="851.3557" z="0.1000001" pathPrecision="1" />
+			<MoveTo questId="1" x="3993.448" y="847.1662" z="0.1013358" pathPrecision="10" />
+			<MoveTo questId="1" x="4075.402" y="765.6817" z="0.1" pathPrecision="10" />
 			<MoveTo questId="1" x="4209.848" y="621.9036" z="0.1" pathPrecision="1" />
 			<MoveTo questId="1" x="4208.532" y="549.4142" z="0.1000133" pathPrecision="1" />
 		</If>
