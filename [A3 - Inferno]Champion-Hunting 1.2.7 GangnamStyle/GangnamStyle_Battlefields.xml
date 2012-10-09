@@ -1,5 +1,5 @@
 <Profile>
-	<Name>[A3 - Inferno]Champion-Hunting 1.2 GangnamStyle - Battlefields</Name>
+	<Name>[A3 - Inferno]Champion-Hunting 1.2.7 GangnamStyle - Battlefields</Name>
 	<KillMonsters>True</KillMonsters>
 	<PickupLoot>True</PickupLoot>
 	<GameParams quest="101758" step="29" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  />

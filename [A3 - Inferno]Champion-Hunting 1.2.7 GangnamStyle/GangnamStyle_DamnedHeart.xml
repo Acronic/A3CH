@@ -1,5 +1,5 @@
 <Profile>
-	<Name>[A3 - Inferno]Champion-Hunting 1.2 GangnamStyle - Heart of the Damned</Name>
+	<Name>[A3 - Inferno]Champion-Hunting 1.2.7 GangnamStyle - Heart of the Damned</Name>
 	<KillMonsters>True</KillMonsters>
 	<PickupLoot>True</PickupLoot>
 	<GameParams quest="101758" step="29" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  />
