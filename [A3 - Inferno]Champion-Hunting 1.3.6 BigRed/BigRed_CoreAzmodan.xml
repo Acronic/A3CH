@@ -42,16 +42,24 @@
 		</If>
 		
 		<!-- Kill Azmodan -->
-		<If condition="ZetaDia.CurrentWorldId == 121214" >
+		<If condition="ZetaDia.CurrentWorldId == 121214 and IsActiveQuestStep(1)" >
 			<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="200" killRadius="200" />
-			<MoveTo questId="101758" stepId="1" name="Azmodan-1" x="486.2456" y="515.7155" z="0.5194985" />
-			<WaitTimer questId="1" waitTime="500" />
-			<SkipCutscene questId="1" />
-			<WaitTimer questId="1" waitTime="500" />
-			<MoveTo questId="101758" stepId="1" name="Azmodan-2" x="385.292" y="402.2332" z="0.5195014" />
+
+
+			<MoveTo questId="1" x="672.2292" y="674.9328" z="80.34946" name="Top of the Stairs" />
+			<MoveTo questId="1" x="643.5524" y="647.3046" z="63.04906" name="Down the Stairs to Azmo - 01" />
+			<MoveTo questId="1" x="619.676" y="623.6473" z="47.69696" name="Down the Stairs to Azmo - 02" />
+			<MoveTo questId="1" x="582.1134" y="584.9152" z="22.92652"  name="Down the Stairs to Azmo - 03" />
+			<MoveTo questId="1" x="560.157" y="562.6616" z="8.719705" pathPrecision="5" name="Down the Stairs to Azmo - 04" />
+			<MoveTo questId="101758" stepId="1" x="486.2456" y="505.7155" z="0.5194985" name="Azmodan-1"  />		
+						
+				<While condition="IsActiveQuestStep(1)">
+					<SkipCutscene questId="101758" stepId="1" />	
+				</While>
+				
+			<MoveTo questId="101758" stepId="1" x="385.292" y="402.2332" z="0.5195014" name="Azmodan-2" />
 			<WaitTimer questId="101758" stepId="1" waitTime="225000" /> 
 		</If>
-		
 		<!-- Azmodan Dead -->
 		<If condition="IsActiveQuestStep(32) and ZetaDia.CurrentWorldId == 121214" >
 				<MoveTo questId="1" x="390.9271" y="393.5964" z="0.1000014" pathPrecision="10" name="Post Azmodan-1" />
@@ -63,8 +71,8 @@
 	
 		<If condition="(not Me.IsInTown)">   
 			<UseTownPortal questId="1" />  
-					<WaitTimer questId="1" waitTime="50" />
 				<While condition="not Me.IsInTown">
+					<WaitTimer questId="1" waitTime="50" />
 				</While>
 		</If>
 		
