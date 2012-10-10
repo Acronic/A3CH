@@ -1,0 +1,69 @@
+<Profile>
+	<Name>[A3 - Inferno]Champion-Hunting 1.3.6.1 BigRed - Rakkis Crossing South</Name>
+	<KillMonsters>True</KillMonsters>
+	<PickupLoot>True</PickupLoot>
+	<GameParams quest="101758" step="29" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> 
+	<Order>
+	<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="120" killRadius="45" />
+			
+		<!-- From Town -->
+		<If condition="Zeta.ZetaDia.CurrentWorldId==172909">
+			<MoveTo questId="1" x="402.5403" y="414.342" z="1.5338" />
+			<WaitTimer questId="1" waitTime="150" />
+			<UseWaypoint questId="1" actorId="6442" x="402.5403" y="414.342" z="1.5338" waypointNumber="5" />	
+				<While condition="Me.IsInTown">
+					<WaitTimer questId="1" waitTime="50" />
+				</While>	
+		</If>
+		
+		
+		<!-- From Waypoint -->
+		<If condition="ActorExistsAt(6442, 913.334, 583.4025, 0.3031104, 40) and ZetaDia.CurrentWorldId == 95804"> 
+			<MoveTo questId="1" x="985.5276" y="579.5453" z="0.3501447" pathPrecision="10" name="Rakkis South-01" />
+			<MoveTo questId="1" x="992.4396" y="556.4188" z="0.2265503" pathPrecision="10" name="Rakkis South-02"/>
+			<MoveTo questId="1" x="1050.989" y="561.8228" z="-24.41289" name="Rakkis South-03"/>
+			<MoveTo questId="1" x="1050.572" y="591.9965" z="-24.46794" pathPrecision="10" name="Rakkis South-04"/>
+			<MoveTo questId="1" x="1125.261" y="627.1517" z="-24.9" pathPrecision="10" name="Rakkis South-05"/>
+			<MoveTo questId="1" x="1180.885" y="594.4463" z="-24.9" pathPrecision="10" name="Rakkis South-06"/>
+			<MoveTo questId="1" x="1256.278" y="631.3382" z="-23.91179" pathPrecision="10" name="Rakkis South-07"/>
+			<MoveTo questId="1" x="1329.506" y="604.4839" z="-24.34704" pathPrecision="10" name="Rakkis South-08"/>
+			<MoveTo questId="1" x="1371.893" y="591.318" z="-24.40843" pathPrecision="1" name="Rakkis South-09" />
+			<UseObject questId="1" stepId="1" actorId="200832" interactRange="25"  /> <!--Charred Door -->
+			<WaitTimer questId="1" waitTime="500" />
+			<MoveTo questId="1" x="1438.951" y="598.6323" z="-24.9" pathPrecision="10" name="Rakkis South-10"/>
+			<MoveTo questId="1" x="1434.239" y="631.8721" z="-24.9" pathPrecision="10" name="Rakkis South-11"/>		
+			<MoveTo questId="1" x="1387.248" y="618.1877" z="-24.9"  pathPrecision="10" name="Rakkis South-12"/>
+			<MoveTo questId="1" x="1371.893" y="591.318" z="-24.40843" pathPrecision="10" name="Rakkis South-13"/>
+			<MoveTo questId="1" x="1371.358" y="583.7648" z="-24.777" pathPrecision="1" name="Rakkis South-14" />
+			<WaitTimer questId="1" waitTime="500" />
+			<UseObject questId="1" actorId="176001" interactRange="45" /> <!-- Portal to Bridge Stores -->
+			<WaitTimer questId="1" waitTime="500" />
+		</If>
+			
+		<!-- Bridge Stores w/o elite-->
+		<If condition="Zeta.ZetaDia.CurrentWorldId==140444">
+			<MoveTo questId="1" x="168.6867" y="41.3113" z="-11.8103"  name="BridgeStore w/o Elite-01" />
+			<MoveTo questId="1" x="169.3341" y="87.11375" z="-24.1749"  name="BridgeStore w/o Elite-02" />
+		</If>
+				
+		<!-- Bridge Stores with elite-->
+		<If condition="Zeta.ZetaDia.CurrentWorldId==205422">
+			<MoveTo questId="1" x="168.6867" y="41.3113" z="-11.8103"  name="BridgeStore w/ Elite-01" />
+			<MoveTo questId="1" x="169.3341" y="87.11375" z="-24.1749"  name="BridgeStore w/ Elite-02" />
+			<MoveTo questId="1" x="121.9488" y="75.70328" z="-24.9" pathPrecision="3" name="BridgeStore w/ Elite-03" />
+			<MoveTo questId="1" x="169.5594" y="88.21939" z="-24.17553" pathPrecision="3" name="BridgeStore w/ Elite-04" />
+			<MoveTo questId="1" x="171.034" y="42.417" z="-11.85881"  name="BridgeStore w/ Elite-05" />
+		</If>
+
+			
+		<If condition="(not Me.IsInTown)">   
+			<UseTownPortal questId="1" />  
+				<While condition="not Me.IsInTown">
+					<WaitTimer questId="1" waitTime="50" />
+				</While>
+		</If>
+		
+		<WaitTimer questId="1" waitTime="5000" />
+		<Continue profile="BigRed_UnderBridge.xml"  />
+	</Order>
+</Profile>
