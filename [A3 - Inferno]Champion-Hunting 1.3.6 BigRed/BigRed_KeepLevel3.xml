@@ -1,0 +1,29 @@
+<Profile>
+	<Name>[A3 - Inferno]Champion-Hunting 1.3.5 BigRed - The Keep Depths Level 3: Random</Name>
+	<KillMonsters>True</KillMonsters>
+	<PickupLoot>True</PickupLoot>
+	<GameParams quest="101758" step="1" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  />
+	<Order>
+		<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="45" />
+		<!-- From Town -->
+		<If condition="Zeta.ZetaDia.CurrentWorldId==172909">
+			<UseWaypoint questId="1" actorId="6442" x="402.5403" y="414.342" z="1.5338" waypointNumber="3" />
+			<WaitTimer questId="1" waitTime="500" />
+		</If>
+		
+<If condition="ZetaDia.CurrentWorldId == 136415"> <!-- Keep Level 3 -->
+<ExploreArea  questId="1" boxTolerance="0.45" boxSize="20" until="FullyExplored" />
+<UseTownPortal questId="1" />
+</If>
+
+		<If condition="(not Me.IsInTown)">   
+			<UseTownPortal questId="1" />       
+		</If>
+		
+		<WaitTimer questId="1" waitTime="5000" />
+<Continue profile="BigRed_ArreatCraterLevel1.xml" />
+
+
+
+</Order>
+</Profile>
