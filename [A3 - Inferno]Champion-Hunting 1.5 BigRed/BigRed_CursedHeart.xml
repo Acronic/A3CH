@@ -22,12 +22,12 @@
 			<UseObject questId="1" stepId="1" actorId="161278" isPortal="True" destinationWorldId="119650" interactRange="30" x="1080.139" y="888.6223" z="-62.22284" />
 			<WaitTimer WaitTime="1000" />
 		</If>
-	
+		
 		<!-- Start of Heart of Cursed -->
 		<If condition="Zeta.ZetaDia.CurrentWorldId==119650 and IsActiveQuestStep(29)">
 			<MoveTo questId="1" x="1047.614" y="1279.675" z="40.19239" pathPrecision="10" name="Heart of the Cursed-01" />
-			<MoveTo questId="1" x="1148.76" y="1270.359" z="40.1" pathPrecision="10" name="Heart of the Cursed-02"/> <!-- Current player position when stuck=<1193.062, 1233.342, 41.01807> -->
-			<MoveTo questId="1" x="1219.801" y="1221.462" z="40.33031" pathPrecision="10" name="Heart of the Cursed-03" /> <!-- 	Original Destination=<1205, 1222.5, 40.91807>. -->
+			<MoveTo questId="1" x="1148.76" y="1270.359" z="40.1" pathPrecision="10" name="Heart of the Cursed-02"/> 
+			<MoveTo questId="1" x="1219.801" y="1221.462" z="40.33031" pathPrecision="10" name="Heart of the Cursed-03" /> 
 			<MoveTo questId="1" x="1271.218" y="1138.841" z="40.1" pathPrecision="10" name="Heart of the Cursed-04" />
 			<MoveTo questId="1" x="1270.786" y="1088.514" z="40.50775" pathPrecision="10" name="Heart of the Cursed-05" />
 			<MoveTo questId="1" x="1213.249" y="1076.738" z="16.74862" pathPrecision="10" name="Heart of the Cursed-06" />
