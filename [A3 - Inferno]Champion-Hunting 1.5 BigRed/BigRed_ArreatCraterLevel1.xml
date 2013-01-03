@@ -7,14 +7,12 @@
 	<Order>
 	<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="45" />
 
-
-
 <If condition="ZetaDia.CurrentWorldId == 172909"> 
 <UseWaypoint questId="1" actorId="6442" x="402.5403" y="414.342" z="1.5338" waypointNumber="6" />
 <WaitTimer questId="1" waitTime="500" />
 </If>
 
-<If condition="ZetaDia.CurrentWorldId == 81049"> <!-- Arreat Crater Level 1 -->
+<If condition="ZetaDia.CurrentWorldId == 81049"> 
 <ExploreArea  questId="1" boxTolerance="0.45" boxSize="20" until="FullyExplored" exitNameHash="2083727832" />
 <UseTownPortal questId="1" />
 </If>
