@@ -1,0 +1,71 @@
+<Profile>
+	<Name>[A3 - Inferno]BigRed 1.05 - Arreat Core [B]</Name>
+	<Ciggarc StartProfile="BigRed_START_HERE.xml"/>
+	<KillMonsters>True</KillMonsters>
+	<PickupLoot>True</PickupLoot>
+	<GameParams quest="101758" step="1" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  />
+	<Order>
+	<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="45" />
+
+		<!-- From Town -->
+		<If condition="Zeta.ZetaDia.CurrentWorldId==172909 and IsActiveQuestStep(1)">
+			<MoveTo questId="1" x="402.5403" y="414.342" z="1.5338" />
+			<WaitTimer questId="1" waitTime="150" />
+			<UseWaypoint questId="1" actorId="6442" x="402.5403" y="414.342" z="1.5338" waypointNumber="10" />	
+				<While condition="Me.IsInTown">
+					<WaitTimer questId="1" waitTime="50" />
+				</While>			
+		</If>
+		
+		<!-- From Waypoint -->
+		<If condition="ActorExistsAt(6442, 1162.255, 686.1193, 0.1, 40) and ZetaDia.CurrentWorldId == 119290"> 
+		<MoveTo questId="1" x="1160.052" y="722.8983" z="0.09999999" pathPrecision="3" />
+		<MoveTo questId="1" x="1108.458" y="722.3059" z="0.1000002" pathPrecision="3" />
+		<MoveTo questId="1" x="1043.62" y="713.3087" z="0.1" pathPrecision="3" />
+		<MoveTo questId="1" x="1001.8" y="721.4873" z="0.1000002" pathPrecision="3" />
+		<MoveTo questId="1" x="956.0302" y="725.5563" z="0.1000202" pathPrecision="3" />
+		<MoveTo questId="1" x="896.6094" y="717.8361" z="0.1000153" pathPrecision="3" />
+		<MoveTo questId="1" x="843.6021" y="696.2322" z="0.1000153" pathPrecision="3" />
+		<MoveTo questId="1" x="824.512" y="660.366" z="0.1000153" pathPrecision="3" />
+		<MoveTo questId="1" x="783.3548" y="650.9557" z="0.1000229" pathPrecision="3" />
+		<MoveTo questId="1" x="765.9359" y="617.3069" z="0.10002" pathPrecision="3" />
+		<MoveTo questId="1" x="768.2972" y="586.369" z="0.1000153" pathPrecision="3" />
+		<MoveTo questId="1" x="741.0438" y="557.1" z="0.1000648" pathPrecision="3" />
+		<MoveTo questId="1" x="706.1238" y="547.2761" z="0.1000153" pathPrecision="3" />
+		<MoveTo questId="1" x="664.4451" y="544.8285" z="0.1000158" pathPrecision="3" />
+		<MoveTo questId="1" x="635.1184" y="554.6061" z="0.09988881" pathPrecision="3" />
+		<MoveTo questId="1" x="587.2473" y="561.517" z="0.09988668" pathPrecision="3" />
+		<MoveTo questId="1" x="565.2133" y="580.4076" z="0.09581649" pathPrecision="3" />
+		<MoveTo questId="1" x="557.842" y="610.7742" z="0.09780394" pathPrecision="3" />
+		<MoveTo questId="1" x="544.6437" y="636.1667" z="0.1000153" pathPrecision="3" />
+		<MoveTo questId="1" x="543.8281" y="665.8627" z="0.1000153" pathPrecision="3" />
+		<MoveTo questId="1" x="580.1217" y="682.3245" z="0.1000153" pathPrecision="3" />
+		<MoveTo questId="1" x="548.1335" y="701.8646" z="0.7252545" pathPrecision="3" />
+		<MoveTo questId="1" x="514.6155" y="716.764" z="0.3310175" pathPrecision="3" />
+		<MoveTo questId="1" x="465.8595" y="722.2612" z="0.09999976" pathPrecision="3" />
+		<MoveTo questId="1" x="419.9297" y="720.8762" z="0.09999976" pathPrecision="3" />
+		<MoveTo questId="1" x="375.3196" y="719.7198" z="0.1000004" pathPrecision="3" />
+		<MoveTo questId="1" x="333.9448" y="725.6025" z="0.1000001" pathPrecision="3" />
+		<MoveTo questId="1" x="290.8416" y="724.1064" z="-1.41354" pathPrecision="3" />
+		<MoveTo questId="1" x="251.8948" y="724.8336" z="-10.47638" pathPrecision="3" />
+		<MoveTo questId="1" x="188.9414" y="715.9685" z="-44.7464" pathPrecision="3" />
+			<WaitTimer questId="1" waitTime="250" />
+		</If>		
+		
+		<!-- Checkpoint In front of Azmodan -->	
+		<If condition="ActorExistsAt(3795, 183.6722, 720.6746, -47.19459, 40) and ZetaDia.CurrentWorldId == 119290"> 
+			<MoveTo questId="1" x="158.9385" y="721.4157" z="-51.31796" pathPrecision="1" />
+			<WaitTimer questId="1" waitTime="250" />
+			<UseTownPortal questId="1" />       
+		</If>
+	
+		<If condition="(not Me.IsInTown)">   
+			<UseTownPortal questId="1" />  
+				<While condition="not Me.IsInTown">
+					<WaitTimer questId="1" waitTime="50" />
+				</While>
+		</If>
+		
+		<Continue profile="BigRed_START_HERE.xml" exitgame="true"/>
+	</Order>
+</Profile>

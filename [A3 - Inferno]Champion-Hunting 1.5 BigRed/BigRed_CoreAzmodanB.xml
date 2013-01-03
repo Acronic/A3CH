@@ -1,5 +1,6 @@
 <Profile>
-	<Name>[A3 - Inferno]Champion-Hunting 1.3.6.3 BigRed - Azmodan - Arreat Core</Name>
+	<Name>[A3 - Inferno]BigRed 1.5 - Azmodan [B]</Name>
+	<Ciggarc StartProfile="BigRed_START_HERE.xml"/>
 	<KillMonsters>True</KillMonsters>
 	<PickupLoot>True</PickupLoot>
 	<GameParams quest="101758" step="1" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  />
@@ -19,24 +20,43 @@
 		<!-- From Waypoint -->
 		<If condition="ActorExistsAt(6442, 1162.255, 686.1193, 0.1, 40) and ZetaDia.CurrentWorldId == 119290"> 
 			<WaitTimer questId="1" waitTime="250" />
-			<MoveTo questId="1" x="1140.686" y="732.1945" z="0.1000002" pathPrecision="10" name="Arreat Core-01" />
-			<MoveTo questId="1" x="1081.564" y="715.2292" z="0.09999999" pathPrecision="10" name="Arreat Core-02" />
-			<MoveTo questId="1" x="991.7961" y="728.0093" z="0.1000001" pathPrecision="10" name="Arreat Core-03" />
-			<MoveTo questId="1" x="885.3837" y="717.8165" z="0.1000153" pathPrecision="10" name="Arreat Core-04" />
-			<MoveTo questId="1" x="775.1333" y="627.4221" z="0.1000157" pathPrecision="10" name="Arreat Core-05" />
-			<MoveTo questId="1" x="737.8298" y="549.946" z="0.1000217" pathPrecision="10" name="Arreat Core-06" />
-			<MoveTo questId="1" x="591.9153" y="550.4387" z="0.1000032" pathPrecision="10" name="Arreat Core-07" />
-			<MoveTo questId="1" x="548.8901" y="651.1499" z="0.1000153" pathPrecision="10" name="Arreat Core-08" />
-			<MoveTo questId="1" x="544.4486" y="707.1024" z="0.529933" pathPrecision="10" name="Arreat Core-09" />
-			<MoveTo questId="1" x="336.1475" y="724.474" z="0.1" pathPrecision="10" name="Arreat Core-10" />
-			<MoveTo questId="1" x="183.6722" y="720.6746" z="-47.19459" name="Arreat Core-11" />
+			<MoveTo questId="1" x="1160.052" y="722.8983" z="0.09999999" pathPrecision="3" />
+			<MoveTo questId="1" x="1108.458" y="722.3059" z="0.1000002" pathPrecision="3" />
+			<MoveTo questId="1" x="1043.62" y="713.3087" z="0.1" pathPrecision="3" />
+			<MoveTo questId="1" x="1001.8" y="721.4873" z="0.1000002" pathPrecision="3" />
+			<MoveTo questId="1" x="956.0302" y="725.5563" z="0.1000202" pathPrecision="3" />
+			<MoveTo questId="1" x="896.6094" y="717.8361" z="0.1000153" pathPrecision="3" />
+			<MoveTo questId="1" x="843.6021" y="696.2322" z="0.1000153" pathPrecision="3" />
+			<MoveTo questId="1" x="824.512" y="660.366" z="0.1000153" pathPrecision="3" />
+			<MoveTo questId="1" x="783.3548" y="650.9557" z="0.1000229" pathPrecision="3" />
+			<MoveTo questId="1" x="765.9359" y="617.3069" z="0.10002" pathPrecision="3" />
+			<MoveTo questId="1" x="768.2972" y="586.369" z="0.1000153" pathPrecision="3" />
+			<MoveTo questId="1" x="741.0438" y="557.1" z="0.1000648" pathPrecision="3" />
+			<MoveTo questId="1" x="706.1238" y="547.2761" z="0.1000153" pathPrecision="3" />
+			<MoveTo questId="1" x="664.4451" y="544.8285" z="0.1000158" pathPrecision="3" />
+			<MoveTo questId="1" x="635.1184" y="554.6061" z="0.09988881" pathPrecision="3" />
+			<MoveTo questId="1" x="587.2473" y="561.517" z="0.09988668" pathPrecision="3" />
+			<MoveTo questId="1" x="565.2133" y="580.4076" z="0.09581649" pathPrecision="3" />
+			<MoveTo questId="1" x="557.842" y="610.7742" z="0.09780394" pathPrecision="3" />
+			<MoveTo questId="1" x="544.6437" y="636.1667" z="0.1000153" pathPrecision="3" />
+			<MoveTo questId="1" x="543.8281" y="665.8627" z="0.1000153" pathPrecision="3" />
+			<MoveTo questId="1" x="580.1217" y="682.3245" z="0.1000153" pathPrecision="3" />
+			<MoveTo questId="1" x="548.1335" y="701.8646" z="0.7252545" pathPrecision="3" />
+			<MoveTo questId="1" x="514.6155" y="716.764" z="0.3310175" pathPrecision="3" />
+			<MoveTo questId="1" x="465.8595" y="722.2612" z="0.09999976" pathPrecision="3" />
+			<MoveTo questId="1" x="419.9297" y="720.8762" z="0.09999976" pathPrecision="3" />
+			<MoveTo questId="1" x="375.3196" y="719.7198" z="0.1000004" pathPrecision="3" />
+			<MoveTo questId="1" x="333.9448" y="725.6025" z="0.1000001" pathPrecision="3" />
+			<MoveTo questId="1" x="290.8416" y="724.1064" z="-1.41354" pathPrecision="3" />
+			<MoveTo questId="1" x="251.8948" y="724.8336" z="-10.47638" pathPrecision="3" />
+			<MoveTo questId="1" x="188.9414" y="715.9685" z="-44.7464" pathPrecision="3" />
 			<WaitTimer questId="1" waitTime="250" />
 		</If>	
 		
 		<!-- Checkpoint In front of Azmodan -->	
 		<If condition="ActorExistsAt(3795, 183.6722, 720.6746, -47.19459, 40) and ZetaDia.CurrentWorldId == 119290"> 
 			<WaitTimer questId="1" waitTime="250" />
-			<MoveTo questId="1" x="156.8677" y="719.1554" z="-51.6376" name="Arreat Core-12" />
+			<MoveTo questId="1" x="158.9385" y="721.4157" z="-51.31796" pathPrecision="1" />
 			<UseObject questId="1" actorId="159575" isPortal="True" destinationWorldId="121214" interactRange="75" /> 	<!-- Portal to Azmodan -->
 			<WaitTimer questId="1" waitTime="250" />
 		</If>
@@ -61,13 +81,6 @@
 			<WaitTimer questId="101758" stepId="1" waitTime="225000" /> 
 		</If>
 		<!-- Azmodan Dead -->
-		<If condition="IsActiveQuestStep(32) and ZetaDia.CurrentWorldId == 121214" >
-				<MoveTo questId="1" x="390.9271" y="393.5964" z="0.1000014" pathPrecision="10" name="Post Azmodan-1" />
-				<MoveTo questId="1" x="479.0075" y="422.4702" z="0.1734161" pathPrecision="10" name="Post Azmodan-2" />
-				<MoveTo questId="1" x="484.9087" y="483.4088" z="0.1734212" pathPrecision="10" name="Post Azmodan-3" />
-				<MoveTo questId="1" x="417.3651" y="483.5094" z="0.1734192" pathPrecision="10" name="Post Azmodan-4" />
-				<MoveTo questId="1" x="389.9103" y="435.9934" z="0.1" pathPrecision="10" name="Post Azmodan-5" />
-		</If> 
 	
 		<If condition="(not Me.IsInTown)">   
 			<UseTownPortal questId="1" />  

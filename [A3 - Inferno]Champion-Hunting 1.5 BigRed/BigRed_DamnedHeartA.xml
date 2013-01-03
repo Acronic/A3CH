@@ -1,0 +1,42 @@
+<Profile>
+	<Name>[A3 - Inferno]BigRed 1.5 - Heart of the Damned[A]</Name>
+	<Ciggarc StartProfile="BigRed_START_HERE.xml"/>
+	<KillMonsters>True</KillMonsters>
+	<PickupLoot>True</PickupLoot>
+	<GameParams quest="101758" step="29" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  />
+	<Order>
+	<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="45" />
+	
+		<!-- Start of Heart of the Damned -->
+		<If condition="Zeta.ZetaDia.CurrentWorldId==85201">
+			<MoveTo questId="1" x="1093.752" y="1136.849" z="0.1727592" pathPrecision="10" name="Heart of the Damned-01" />
+			<MoveTo questId="1" x="1111.951" y="1020.598" z="0.7296003" pathPrecision="10" name="Heart of the Damned-02"  />
+			<MoveTo questId="1" x="1083.669" y="954.7586" z="0.09999687" pathPrecision="10" name="Heart of the Damned-03"  />
+			<MoveTo questId="1" x="1082.714" y="884.4731" z="-9.729635"  name="Heart of the Damned-04"  />
+			<MoveTo questId="1" x="1001.296" y="908.8767" z="-9.899996" pathPrecision="10" name="Heart of the Damned-05"  />
+			<MoveTo questId="1" x="1086.863" y="883.7942" z="-9.729635" pathPrecision="10" name="Heart of the Damned-06"  />
+			<MoveTo questId="1" x="1165.838" y="932.3666" z="-19.18582"  name="Heart of the Damned-07"  />
+			<MoveTo questId="1" x="1239.347" y="1019.046" z="-19.9" pathPrecision="10" name="Heart of the Damned-08"  />
+			<MoveTo questId="1" x="1195.805" y="1016.761" z="-19.9" pathPrecision="10" name="Heart of the Damned-09" />
+			<MoveTo questId="1" x="1211.728" y="1115.564" z="-29.9"  name="Heart of the Damned-10" />
+			<MoveTo questId="1" x="1271.722" y="1136.579" z="-39.9"  name="Heart of the Damned-11" />
+			<MoveTo questId="1" x="1225.572" y="1211.516" z="-39.9" pathPrecision="10" name="Heart of the Damned-12" />
+			<MoveTo questId="1" x="1095.674" y="1282.431" z="-49.9"  name="Heart of the Damned-13" />
+			<MoveTo questId="1" x="1091.312" y="1219.819" z="-49.90001" pathPrecision="10" name="Heart of the Damned-14" />
+			<MoveTo questId="1" x="1015.387" y="1239.514" z="-49.85857" pathPrecision="10" name="Heart of the Damned-15" />
+			<MoveTo questId="1" x="940.3734" y="1141.974" z="-49.9" pathPrecision="10" name="Heart of the Damned-16" />
+			<MoveTo questId="1" x="898.2618" y="1045.83" z="-59.9"  name="Heart of the Damned-17" />
+			<MoveTo questId="1" x="826.9446" y="1081.462" z="-74.40876"  name="Heart of the Damned-18" />
+		</If>
+		
+		<If condition="(not Me.IsInTown)">   
+			<UseTownPortal questId="1" />  
+				<While condition="not Me.IsInTown">
+					<WaitTimer questId="1" waitTime="50" />
+				</While>
+		</If>
+		
+		<WaitTimer questId="1" waitTime="5000" />
+		<Continue profile="BigRed_CursedTowerA.xml, BigRed_CursedTowerB.xml"/>
+	</Order>
+</Profile>

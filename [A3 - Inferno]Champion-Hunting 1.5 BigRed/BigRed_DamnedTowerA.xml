@@ -1,0 +1,156 @@
+<Profile>
+	<Name>[A3 - Inferno]BigRed 1.5 - Tower of the Damned Level 1 and 2[A] </Name>
+	<Ciggarc StartProfile="BigRed_START_HERE.xml"/>
+	<KillMonsters>True</KillMonsters>
+	<PickupLoot>True</PickupLoot>
+	<GameParams quest="101758" step="29" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> 
+	<Order>
+	<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="45" />
+	
+		<!-- From Town -->
+		<If condition="Zeta.ZetaDia.CurrentWorldId==172909">
+			<MoveTo questId="1" x="402.5403" y="414.342" z="1.5338" />
+			<WaitTimer questId="1" waitTime="150" />
+			<UseWaypoint questId="1" actorId="6442" x="402.5403" y="414.342" z="1.5338" waypointNumber="7" />	
+				<While condition="Me.IsInTown">
+					<WaitTimer questId="1" waitTime="50" />
+				</While>	
+		</If>
+		
+		
+		<!-- From Waypoint -->
+		<If condition="ActorExistsAt(6442, 1041.245, 990.0298, -9.890291, 40) and ZetaDia.CurrentWorldId == 79401"> 			
+			<MoveTo questId="1" x="1031.134" y="979.1714" z="-9.899998" pathPrecision="10" name="Tower of the Damned: Level 1-01" />
+			<MoveTo questId="1" x="1006.689" y="967.5882" z="-9.65193" pathPrecision="10" name="Tower of the Damned: Level 1-02" />
+			<MoveTo questId="1" x="969.4581" y="915.234" z="-9.899996" pathPrecision="10" name="Tower of the Damned: Level 1-03" />
+			<MoveTo questId="1" x="922.0323" y="957.9777" z="-9.801432" pathPrecision="10" name="Tower of the Damned: Level 1-04" />
+			<MoveTo questId="1" x="882.5439" y="1051.578" z="-19.80381" name="Tower of the Damned: Level 1-05" />
+			<MoveTo questId="1" x="889.7587" y="1147.872" z="-29.9" name="Tower of the Damned: Level 1-06" />
+			<MoveTo questId="1" x="933.3544" y="1215.931" z="-29.9" pathPrecision="10" name="Tower of the Damned: Level 1-07" />
+			<MoveTo questId="1" x="1004.621" y="1267.223" z="-30.13397" pathPrecision="10" name="Tower of the Damned: Level 1-08" />
+			<MoveTo questId="1" x="1062.323" y="1280.042" z="-39.0773" name="Tower of the Damned: Level 1-09" />
+			<MoveTo questId="1" x="1108.178" y="1280.53" z="-39.9" pathPrecision="10" name="Tower of the Damned: Level 1-10" />
+			<MoveTo questId="1" x="1133.958" y="1248.846" z="-38.8428" pathPrecision="10" name="Tower of the Damned: Level 1-11" />
+			<MoveTo questId="1" x="1172.838" y="1256.494" z="-39.38434" pathPrecision="10" name="Tower of the Damned: Level 1-12" />
+			<MoveTo questId="1" x="1224.064" y="1218.088" z="-38.58931" pathPrecision="10" name="Tower of the Damned: Level 1-13" />
+			<MoveTo questId="1" x="1274.308" y="1135.421" z="-29.68912"  name="Tower of the Damned: Level 1-14" />
+			<MoveTo questId="1" x="1244.816" y="1194.622" z="-29.26966" pathPrecision="10" name="Tower of the Damned: Level 1-15" />
+			<MoveTo questId="1" x="1188.757" y="1154.886" z="-29.9" pathPrecision="10" name="Tower of the Damned: Level 1-16" />
+			<MoveTo questId="1" x="1214.136" y="1061.833" z="-19.9"  name="Tower of the Damned: Level 1-17" />
+			<MoveTo questId="1" x="1280.614" y="1055.127" z="-19.9" pathPrecision="10" name="Tower of the Damned: Level 1-18" /> 
+			<MoveTo questId="1" x="1280.831" y="1098.904" z="-19.79504" pathPrecision="10" name="Tower of the Damned: Level 1-19" /> <!-- Current player position when stuck=<1274.204, 1059.063, -19.9> -->
+			<MoveTo questId="1" x="1212.932" y="929.4642" z="-9.9"  name="Tower of the Damned: Level 1-20" />   <!-- Original Destination=<1272.5, 1025, -18.79057> -->
+			<MoveTo questId="1" x="1171.131" y="989.9717" z="-9.899996" pathPrecision="10" name="Tower of the Damned: Level 1-21" />
+			<MoveTo questId="1" x="1076.276" y="954.2126" z="-9.899998" pathPrecision="10" name="Tower of the Damned: Level 1-22" />
+			<MoveTo questId="1" x="965.574" y="1059.097" z="-29.72211"  name="Tower of the Damned: Level 1-23" />
+			<MoveTo questId="1" x="986.6772" y="1141.989" z="-29.61626" pathPrecision="10" name="Tower of the Damned: Level 1-24" />
+			<MoveTo questId="1" x="1040.019" y="1122.787" z="-39.90001"  name="Tower of the Damned: Level 1-25" />
+			<MoveTo questId="1" x="1101.962" y="1138.224" z="-41.2337"  name="Tower of the Damned: Level 1-26" />
+			<MoveTo questId="1" x="1129.661" y="1074.944" z="-64.44357"  name="Tower of the Damned: Level 1-27" />
+			<MoveTo questId="1" x="1083.872" y="1038.083" z="-86.04954"  name="Tower of the Damned: Level 1-28" />
+			<MoveTo questId="1" x="1083.822" y="1039.321" z="-86.08116" name="Tower of the Damned: Level 1-29"/>
+			<WaitTimer questId="1" waitTime="250" />
+			<UseObject questId="1" stepId="1" actorId="176001" isPortal="True" destinationWorldId="80763" interactRange="45" x="1086.002" y="1043.2" z="-83.01437" />
+			<WaitTimer questId="1" waitTime="250" />
+		</If>
+
+		<!-- Lvl2A -->
+		<If condition="ActorExistsAt(176001, 1080.005, 883.4227, -112.3811, 80) and Zeta.ZetaDia.CurrentWorldId==80763">
+			<MoveTo questId="1" x="1086.647" y="1143.888" z="1.020697" pathPrecision="10" name="Tower of the Damned: Level 2:2A-01" />
+			<WaitTimer questId="1" waitTime="250" />
+		</If>	
+		<!-- Checkpoint -->		
+		<If condition="ActorExistsAt(3795, 1092.011, 1142.574, 0.4987469, 30) and Zeta.ZetaDia.CurrentWorldId==80763">
+			<MoveTo questId="1" x="1132.151" y="1102.555" z="0.100001" pathPrecision="10" name="Tower of the Damned: Level 2:2A-02"/>
+			<MoveTo questId="1" x="1132.803" y="1072.662" z="0.1079324" pathPrecision="10" name="Tower of the Damned: Level 2:2A-03"/>
+			<MoveTo questId="1" x="1166.485" y="1062.212" z="-9.840229"  name="Tower of the Damned: Level 2:2A-04"/>
+			<MoveTo questId="1" x="1148.757" y="1013.804" z="-9.899993" pathPrecision="10" name="Tower of the Damned: Level 2:2A-05"/>
+			<MoveTo questId="1" x="1183.83" y="988.4839" z="-9.899994" pathPrecision="10" name="Tower of the Damned: Level 2:2A-06"/>
+			<MoveTo questId="1" x="1129.739" y="1018.805" z="-9.899994" pathPrecision="10" name="Tower of the Damned: Level 2:2A-07"/>
+			<MoveTo questId="1" x="1078.236" y="998.072" z="-19.89991"  name="Tower of the Damned: Level 2:2A-08"/>
+			<MoveTo questId="1" x="1078.681" y="935.3997" z="-29.9"  name="Tower of the Damned: Level 2:2A-09"/>
+			<MoveTo questId="1" x="1044.217" y="888.1935" z="-39.38912" pathPrecision="10" name="Tower of the Damned: Level 2:2A-10"/>
+			<MoveTo questId="1" x="953.8505" y="927.6224" z="-39.89999" pathPrecision="10" name="Tower of the Damned: Level 2:2A-11"/>
+			<MoveTo questId="1" x="891.6527" y="1016.187" z="-39.89999" pathPrecision="10" name="Tower of the Damned: Level 2:2A-12"/>
+			<MoveTo questId="1" x="880.1454" y="1071.05" z="-39.62139" pathPrecision="10" name="Tower of the Damned: Level 2:2A-13"/>
+			<MoveTo questId="1" x="954.265" y="1076.972" z="-39.9" pathPrecision="10" name="Tower of the Damned: Level 2:2A-14"/>
+			<MoveTo questId="1" x="950.1848" y="1102.459" z="-39.9" pathPrecision="10" name="Tower of the Damned: Level 2:2A-15"/>
+			<MoveTo questId="1" x="888.4726" y="1121.146" z="-39.8365" pathPrecision="10" name="Tower of the Damned: Level 2:2A-16"/>
+			<MoveTo questId="1" x="904.0262" y="1167.613" z="-49.9"  name="Tower of the Damned: Level 2:2A-17"/>
+			<MoveTo questId="1" x="976.6093" y="1139.015" z="-49.61755" pathPrecision="10" name="Tower of the Damned: Level 2:2A-18"/>
+			<MoveTo questId="1" x="1046.523" y="1193.061" z="-59.72595"  name="Tower of the Damned: Level 2:2A-19"/>
+			<MoveTo questId="1" x="1024.176" y="1262.642" z="-59.90001" pathPrecision="10" name="Tower of the Damned: Level 2:2A-20"/>
+			<MoveTo questId="1" x="945.5784" y="1233.074" z="-49.9"  name="Tower of the Damned: Level 2:2A-21"/>
+			<MoveTo questId="1" x="983.9898" y="1189.026" z="-49.9" pathPrecision="10" name="Tower of the Damned: Level 2:2A-22"/>
+			<MoveTo questId="1" x="1045.96" y="1232.828" z="-59.90001"  name="Tower of the Damned: Level 2:2A-23"/>
+			<MoveTo questId="1" x="1056.961" y="1265.117" z="-59.90001" pathPrecision="10" name="Tower of the Damned: Level 2:2A-24"/>
+			<MoveTo questId="1" x="1089.47" y="1276.577" z="-59.9" pathPrecision="10" name="Tower of the Damned: Level 2:2A-25"/>
+			<MoveTo questId="1" x="1108.913" y="1252.215" z="-59.89999" pathPrecision="10" name="Tower of the Damned: Level 2:2A-26"/>
+			<MoveTo questId="1" x="1149.383" y="1276.669" z="-59.09097" pathPrecision="10" name="Tower of the Damned: Level 2:2A-27"/>
+			<MoveTo questId="1" x="1170.672" y="1264.961" z="-59.9" pathPrecision="10" name="Tower of the Damned: Level 2:2A-28"/>
+			<MoveTo questId="1" x="1187.52" y="1224.47" z="-59.89999" pathPrecision="10" name="Tower of the Damned: Level 2:2A-29"/>
+			<MoveTo questId="1" x="1244.196" y="1209.032" z="-58.86135" pathPrecision="10" name="Tower of the Damned: Level 2:2A-30"/>
+			<MoveTo questId="1" x="1277.698" y="1105.82" z="-69.71345"  name="Tower of the Damned: Level 2:2A-31"/>
+			<MoveTo questId="1" x="1291.068" y="1061.581" z="-69.60588" pathPrecision="10" name="Tower of the Damned: Level 2:2A-32"/>
+			<MoveTo questId="1" x="1261.957" y="1046.14" z="-69.9" pathPrecision="10" name="Tower of the Damned: Level 2:2A-33"/>
+			<MoveTo questId="1" x="1272.309" y="1005.207" z="-69.16975" pathPrecision="10" name="Tower of the Damned: Level 2:2A-34"/>
+			<MoveTo questId="1" x="1176.806" y="896.7028" z="-79.9"  name="Tower of the Damned: Level 2:2A-35"/>
+			<MoveTo questId="1" x="1093.641" y="880.9343" z="-107.5034"  name="Tower of the Damned: Level 2:2A-36"/>
+			<MoveTo questId="1" x="1083.702" y="884.1192" z="-111.8278" name="Tower of the Damned: Level 2:2A-37"/>
+			<!-- Entrance to Heart of the Damned -->
+			<WaitTimer questId="1" waitTime="250" />
+			<UseObject questId="1" stepId="1" actorId="176001" isPortal="True" destinationWorldId="85201" interactRange="20" x="1080.005" y="883.4227" z="-112.3811" />
+			<WaitTimer questId="1" waitTime="250" />
+		</If>	
+
+		<!-- Lvl2B -->
+		<If condition="ActorExistsAt(176001, 844.4771, 1127.312, 39.86788, 30) and Zeta.ZetaDia.CurrentWorldId==80763">
+			<MoveTo questId="1" x="887.4473" y="1132.653" z="21.3229"  name="Tower of the Damned: Level 2:2B-01"/> />
+		</If>
+		<!-- Checkpoint -->
+		<If condition="ActorExistsAt(3795, 901.4346, 1151.008, 11.92223, 30) and Zeta.ZetaDia.CurrentWorldId==80763">
+			<MoveTo questId="1" x="940.8947" y="1202.709" z="10.1" pathPrecision="10" name="Tower of the Damned: Level 2:2B-02" />
+			<MoveTo questId="1" x="1000.49" y="1160.318" z="10.1" pathPrecision="10" name="Tower of the Damned: Level 2:2B-03" />
+			<MoveTo questId="1" x="1004.419" y="1092.051" z="10.10001" pathPrecision="10" name="Tower of the Damned: Level 2:2B-04" />
+			<MoveTo questId="1" x="1015.566" y="1042.942" z="10.17776" pathPrecision="10" name="Tower of the Damned: Level 2:2B-05" />
+			<MoveTo questId="1" x="1043.041" y="993.3951" z="0.1000001"  name="Tower of the Damned: Level 2:2B-06" />
+			<MoveTo questId="1" x="1052.322" y="1056.239" z="0.09999959" pathPrecision="10" name="Tower of the Damned: Level 2:2B-07" />
+			<MoveTo questId="1" x="1027.272" y="1009.598" z="0.1624322" pathPrecision="10" name="Tower of the Damned: Level 2:2B-08" />
+			<MoveTo questId="1" x="995.8757" y="1066.669" z="10.1" pathPrecision="10" name="Tower of the Damned: Level 2:2B-09" />
+			<MoveTo questId="1" x="908.8159" y="1057.255" z="10.1" pathPrecision="10" name="Tower of the Damned: Level 2:2B-10" />
+			<MoveTo questId="1" x="893.6247" y="1089.56" z="10.10001" pathPrecision="10" name="Tower of the Damned: Level 2:2B-11" />
+			<MoveTo questId="1" x="913.4037" y="977.1454" z="10.38454" pathPrecision="10" name="Tower of the Damned: Level 2:2B-12" />
+			<MoveTo questId="1" x="959.7172" y="927.9568" z="10.1" pathPrecision="10" name="Tower of the Damned: Level 2:2B-13" />
+			<MoveTo questId="1" x="1001.225" y="928.5043" z="10.1" pathPrecision="10" name="Tower of the Damned: Level 2:2B-14" />
+			<MoveTo questId="1" x="1081.874" y="907.8133" z="10.1" pathPrecision="10" name="Tower of the Damned: Level 2:2B-15" />
+			<MoveTo questId="1" x="1125.085" y="894.0451" z="10.1" pathPrecision="10" name="Tower of the Damned: Level 2:2B-16" />
+			<MoveTo questId="1" x="1191.978" y="937.3191" z="0.235899"  name="Tower of the Damned: Level 2:2B-17" />
+			<MoveTo questId="1" x="1161.446" y="967.7278" z="0.09999665" pathPrecision="10" name="Tower of the Damned: Level 2:2B-18" />
+			<MoveTo questId="1" x="1052.556" y="963.6215" z="0.1000005" pathPrecision="10" name="Tower of the Damned: Level 2:2B-19" />
+			<MoveTo questId="1" x="1171.216" y="970.3947" z="0.09999965" pathPrecision="10" name="Tower of the Damned: Level 2:2B-20" />
+			<MoveTo questId="1" x="1200.418" y="940.2941" z="0.1573957" pathPrecision="10" name="Tower of the Damned: Level 2:2B-21" />
+			<MoveTo questId="1" x="1259.188" y="1018.074" z="0.09999999" pathPrecision="10" name="Tower of the Damned: Level 2:2B-22" />
+			<MoveTo questId="1" x="1266.64" y="1117.503" z="-9.510076"  name="Tower of the Damned: Level 2:2B-23" />
+			<MoveTo questId="1" x="1276.316" y="1125.074" z="-9.851776" pathPrecision="10" name="Tower of the Damned: Level 2:2B-24" />
+			<MoveTo questId="1" x="1234.264" y="1204.885" z="-19.75063"  name="Tower of the Damned: Level 2:2B-25" />
+			<MoveTo questId="1" x="1173.243" y="1255.916" z="-19.55712" pathPrecision="10" name="Tower of the Damned: Level 2:2B-26" />
+			<MoveTo questId="1" x="1138.052" y="1254.145" z="-19.29898" pathPrecision="10" name="Tower of the Damned: Level 2:2B-27" />
+			<MoveTo questId="1" x="1109.367" y="1280.966" z="-19.9" pathPrecision="10" name="Tower of the Damned: Level 2:2B-28" />
+			<MoveTo questId="1" x="1085.343" y="1145.268" z="-29.8858"  name="Tower of the Damned: Level 2:2B-29" />
+			<MoveTo questId="1" x="1138.507" y="1085.164" z="-50.98008"  name="Tower of the Damned: Level 2:2B-30" />
+			<MoveTo questId="1" x="1087.311" y="1038.126" z="-75.05704"  name="Tower of the Damned: Level 2:2B-31" />
+			<MoveTo questId="1" x="1084.783" y="1043.206" z="-75.972" name="Tower of the Damned: Level 2:2B-32" />
+			<!-- Entrance to Heart of the Damned -->
+			<WaitTimer questId="1" waitTime="250" />
+			<UseObject questId="1" stepId="1" actorId="176001" isPortal="True" destinationWorldId="85201" interactRange="20" x="1080.005" y="1040.572" z="-67.72293" />
+			<WaitTimer questId="1" waitTime="250" />
+		</If>
+
+
+
+		<!-- Load Heart of the Damned -->
+		<WaitTimer questId="1" waitTime="2000" />
+		<Continue profile="BigRed_DamnedHeartA.xml, BigRed_DamnedHeartB.xml"/>
+	</Order>
+</Profile>
+

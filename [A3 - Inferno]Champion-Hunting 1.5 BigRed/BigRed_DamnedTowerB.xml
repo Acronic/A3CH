@@ -1,0 +1,244 @@
+<Profile>
+	<Name>[A3 - Inferno]BigRed 1.5 - Tower of the Damned Level 1 and 2[B]</Name>
+	<Ciggarc StartProfile="BigRed_START_HERE.xml"/>
+	<KillMonsters>True</KillMonsters>
+	<PickupLoot>True</PickupLoot>
+	<GameParams quest="101758" step="29" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  /> 
+	<Order>
+	<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="45" />
+	
+		<!-- From Town -->
+		<If condition="Zeta.ZetaDia.CurrentWorldId==172909">
+			<MoveTo questId="1" x="402.5403" y="414.342" z="1.5338" />
+			<WaitTimer questId="1" waitTime="150" />
+			<UseWaypoint questId="1" actorId="6442" x="402.5403" y="414.342" z="1.5338" waypointNumber="7" />	
+				<While condition="Me.IsInTown">
+					<WaitTimer questId="1" waitTime="50" />
+				</While>	
+		</If>
+		
+		
+		<!-- Level One from Waypoint -->
+		<If condition="ActorExistsAt(6442, 1041.245, 990.0298, -9.890291, 40) and ZetaDia.CurrentWorldId == 79401"> 			
+			<MoveTo questId="1" x="1028.837" y="971.1728" z="-9.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1081.549" y="955.7529" z="-9.899996" pathPrecision="5" />
+			<MoveTo questId="1" x="1127.602" y="969.5294" z="-9.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1166.849" y="981.005" z="-9.899996" pathPrecision="5" />
+			<MoveTo questId="1" x="1177.063" y="983.3494" z="-9.899996" pathPrecision="5" />
+			<MoveTo questId="1" x="1202.832" y="959.2632" z="-9.899996" pathPrecision="5" />
+			<MoveTo questId="1" x="1220.578" y="948.3414" z="-9.899996" pathPrecision="5" />
+			<MoveTo questId="1" x="1251.536" y="982.9903" z="-9.633083" pathPrecision="5" />
+			<MoveTo questId="1" x="1266.054" y="1003.33" z="-10.00568" pathPrecision="5" />
+			<MoveTo questId="1" x="1273.43" y="1023.703" z="-18.10725" pathPrecision="5" />
+			<MoveTo questId="1" x="1255.517" y="1042.002" z="-19.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1216.869" y="1043.837" z="-19.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1200.823" y="1035.905" z="-19.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1213.483" y="1073.773" z="-19.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1275.706" y="1074.485" z="-19.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1274.287" y="1118.696" z="-25.61852" pathPrecision="5" />
+			<MoveTo questId="1" x="1271.566" y="1132.539" z="-29.68911" pathPrecision="5" />
+			<MoveTo questId="1" x="1246.907" y="1193.091" z="-29.26233" pathPrecision="5" />
+			<MoveTo questId="1" x="1195.978" y="1148.046" z="-29.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1210.429" y="1113.197" z="-25.10395" pathPrecision="5" />
+			<MoveTo questId="1" x="1198.92" y="1161.093" z="-29.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1241.031" y="1189.365" z="-29.82539" pathPrecision="5" />
+			<MoveTo questId="1" x="1214.084" y="1233.088" z="-39.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1170.73" y="1258.453" z="-39.15867" pathPrecision="5" />
+			<MoveTo questId="1" x="1154.938" y="1261.678" z="-38.82956" pathPrecision="5" />
+			<MoveTo questId="1" x="1135.479" y="1265.066" z="-38.68008" pathPrecision="5" />
+			<MoveTo questId="1" x="1089.067" y="1284.148" z="-39.13071" pathPrecision="5" />
+			<MoveTo questId="1" x="1022.586" y="1272.889" z="-37.96516" pathPrecision="5" />
+			<MoveTo questId="1" x="1005.965" y="1265.524" z="-30.39795" pathPrecision="5" />
+			<MoveTo questId="1" x="929.3754" y="1212.55" z="-29.90001" pathPrecision="5" />
+			<MoveTo questId="1" x="909.5778" y="1187.1" z="-29.90001" pathPrecision="5" />
+			<MoveTo questId="1" x="889.7146" y="1143.542" z="-29.9" pathPrecision="5" />
+			<MoveTo questId="1" x="880.7514" y="1101.828" z="-29.9" pathPrecision="5" />
+			<MoveTo questId="1" x="879.7265" y="1070.569" z="-26.0965" pathPrecision="5" />
+			<MoveTo questId="1" x="885.2287" y="1023.844" z="-19.1183" pathPrecision="5" />
+			<MoveTo questId="1" x="899.8394" y="988.7867" z="-19.73075" pathPrecision="5" />
+			<MoveTo questId="1" x="925.7224" y="958.0668" z="-9.801431" pathPrecision="5" />
+			<MoveTo questId="1" x="942.1457" y="933.4022" z="-9.899998" pathPrecision="5" />
+			<MoveTo questId="1" x="962.7237" y="917.4969" z="-9.899314" pathPrecision="5" />
+			<MoveTo questId="1" x="997.5997" y="902.3527" z="-9.865282" pathPrecision="5" />
+			<MoveTo questId="1" x="972.804" y="912.8074" z="-9.9" pathPrecision="5" />
+			<MoveTo questId="1" x="987.6721" y="940.9147" z="-9.9" pathPrecision="5" />
+			<MoveTo questId="1" x="998.7181" y="982.5301" z="-11.25548" pathPrecision="5" />
+			<MoveTo questId="1" x="975.325" y="1007.875" z="-19.89999" pathPrecision="5" />
+			<MoveTo questId="1" x="958.2552" y="1035.144" z="-21.42327" pathPrecision="5" />
+			<MoveTo questId="1" x="952.5562" y="1055.526" z="-29.72853" pathPrecision="5" />
+			<MoveTo questId="1" x="951.8547" y="1095.269" z="-29.9" pathPrecision="5" />
+			<MoveTo questId="1" x="952.0158" y="1113.796" z="-29.90001" pathPrecision="5" />
+			<MoveTo questId="1" x="960.9081" y="1140.091" z="-29.90001" pathPrecision="5" />
+			<MoveTo questId="1" x="980.5038" y="1165.614" z="-29.9" pathPrecision="5" />
+			<MoveTo questId="1" x="995.0635" y="1180.554" z="-29.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1015.258" y="1192.604" z="-29.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1001.351" y="1163.776" z="-29.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1022.577" y="1130.685" z="-39.7181" pathPrecision="5" />
+			<MoveTo questId="1" x="1038.392" y="1125.911" z="-39.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1080.275" y="1141.331" z="-39.90001" pathPrecision="5" />
+			<MoveTo questId="1" x="1097.314" y="1136.984" z="-39.80994" pathPrecision="5" />
+			<MoveTo questId="1" x="1120.348" y="1115.93" z="-50.22289" pathPrecision="5" />
+			<MoveTo questId="1" x="1124.831" y="1092.988" z="-58.76808" pathPrecision="5" />
+			<MoveTo questId="1" x="1119.956" y="1068.325" z="-68.22634" pathPrecision="5" />
+			<MoveTo questId="1" x="1105.952" y="1048.543" z="-77.78365" pathPrecision="5" />
+			<MoveTo questId="1" x="1088.98" y="1043.228" z="-84.16982" />
+			<WaitTimer questId="1" waitTime="250" />
+			<UseObject questId="1" stepId="1" actorId="176001" isPortal="True" destinationWorldId="80763" interactRange="45" x="1086.002" y="1043.2" z="-83.01437" />
+			<WaitTimer questId="1" waitTime="250" />
+		</If>
+
+		<!-- Lvl2A -->
+		<If condition="ActorExistsAt(176001, 1080.005, 883.4227, -112.3811, 80) and Zeta.ZetaDia.CurrentWorldId==80763">
+			<MoveTo questId="1" x="1052.469" y="1122.497" z="15.20495" pathPrecision="5" />
+			<MoveTo questId="1" x="1092.297" y="1138.631" z="0.3687196" pathPrecision="5" />
+			<WaitTimer questId="1" waitTime="250" />
+		</If>	
+		<!-- Checkpoint -->		
+		<If condition="ActorExistsAt(3795, 1092.011, 1142.574, 0.4987469, 30) and Zeta.ZetaDia.CurrentWorldId==80763">
+			<MoveTo questId="1" x="1117.082" y="1131.764" z="0.1000009" pathPrecision="5" />
+			<MoveTo questId="1" x="1134.86" y="1109.488" z="0.1000012" pathPrecision="5" />
+			<MoveTo questId="1" x="1132.974" y="1088.689" z="0.09999692" pathPrecision="5" />
+			<MoveTo questId="1" x="1137.847" y="1068.959" z="0.1621537" pathPrecision="5" />
+			<MoveTo questId="1" x="1167.679" y="1061.81" z="-9.844513" pathPrecision="5" />
+			<MoveTo questId="1" x="1149.49" y="1017.458" z="-9.899993" pathPrecision="5" />
+			<MoveTo questId="1" x="1169.403" y="999.0128" z="-9.899995" pathPrecision="5" />
+			<MoveTo questId="1" x="1118.725" y="1007.688" z="-9.868523" pathPrecision="5" />
+			<MoveTo questId="1" x="1074.238" y="993.6559" z="-19.89999" pathPrecision="5" />
+			<MoveTo questId="1" x="1069.389" y="938.9472" z="-29.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1054.791" y="892.5965" z="-39.84213" pathPrecision="5" />
+			<MoveTo questId="1" x="1039.235" y="892.9163" z="-39.38912" pathPrecision="5" />
+			<MoveTo questId="1" x="1006.232" y="900.5886" z="-39.82924" pathPrecision="5" />
+			<MoveTo questId="1" x="980.2867" y="906.2662" z="-39.89999" pathPrecision="5" />
+			<MoveTo questId="1" x="950.3356" y="928.883" z="-39.9" pathPrecision="5" />
+			<MoveTo questId="1" x="951.5085" y="953.723" z="-39.89999" pathPrecision="5" />
+			<MoveTo questId="1" x="931.7228" y="946.8052" z="-39.89999" pathPrecision="5" />
+			<MoveTo questId="1" x="908.6042" y="969.2843" z="-39.73265" pathPrecision="5" />
+			<MoveTo questId="1" x="915.6036" y="995.4847" z="-39.89999" pathPrecision="5" />
+			<MoveTo questId="1" x="893.488" y="1016.816" z="-39.89999" pathPrecision="5" />
+			<MoveTo questId="1" x="884.9269" y="1040.093" z="-39.89999" pathPrecision="5" />
+			<MoveTo questId="1" x="881.912" y="1068.144" z="-39.67789" pathPrecision="5" />
+			<MoveTo questId="1" x="916.8983" y="1073.079" z="-39.77126" pathPrecision="5" />
+			<MoveTo questId="1" x="953.9813" y="1088.009" z="-39.9" pathPrecision="5" />
+			<MoveTo questId="1" x="920.3915" y="1111.793" z="-39.89999" pathPrecision="5" />
+			<MoveTo questId="1" x="882.4119" y="1121.906" z="-39.89999" pathPrecision="5" />
+			<MoveTo questId="1" x="893.5102" y="1152.528" z="-48.80522" pathPrecision="5" />
+			<MoveTo questId="1" x="903.6744" y="1164.84" z="-49.9" pathPrecision="5" />
+			<MoveTo questId="1" x="940.3422" y="1152.642" z="-49.9" pathPrecision="5" />
+			<MoveTo questId="1" x="986.0259" y="1152.41" z="-49.9" pathPrecision="5" />
+			<MoveTo questId="1" x="997.5903" y="1177.345" z="-49.9" pathPrecision="5" />
+			<MoveTo questId="1" x="951.0527" y="1231.762" z="-49.68967" pathPrecision="5" />
+			<MoveTo questId="1" x="979.2792" y="1250.456" z="-59.56785" pathPrecision="5" />
+			<MoveTo questId="1" x="1009.051" y="1246.273" z="-59.90001" pathPrecision="5" />
+			<MoveTo questId="1" x="1031.528" y="1229.602" z="-59.67164" pathPrecision="5" />
+			<MoveTo questId="1" x="1048.483" y="1208.583" z="-59.80133" pathPrecision="5" />
+			<MoveTo questId="1" x="1050.963" y="1254.091" z="-59.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1066.771" y="1261.874" z="-59.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1114.906" y="1268.912" z="-59.89999" pathPrecision="5" />
+			<MoveTo questId="1" x="1132.368" y="1276.261" z="-59.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1154.824" y="1273.957" z="-59.39846" pathPrecision="5" />
+			<MoveTo questId="1" x="1177.13" y="1254.398" z="-58.59315" pathPrecision="5" />
+			<MoveTo questId="1" x="1199.999" y="1236.2" z="-59.89999" pathPrecision="5" />
+			<MoveTo questId="1" x="1223.391" y="1216.419" z="-59.89999" pathPrecision="5" />
+			<MoveTo questId="1" x="1267.894" y="1152.326" z="-59.89999" pathPrecision="5" />
+			<MoveTo questId="1" x="1284.393" y="1089.735" z="-69.89999" pathPrecision="5" />
+			<MoveTo questId="1" x="1280.168" y="1056.842" z="-69.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1269.499" y="1010.51" z="-69.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1262.323" y="987.9349" z="-69.9" pathPrecision="5" />
+			<MoveTo questId="1" x="1218.44" y="934.8602" z="-79.89999" pathPrecision="5" />
+			<MoveTo questId="1" x="1178.79" y="905.7877" z="-79.90001" pathPrecision="5" />
+			<MoveTo questId="1" x="1111.484" y="880.1433" z="-99.1279" pathPrecision="5" />
+			<MoveTo questId="1" x="1097.627" y="881.924" z="-105.7052" pathPrecision="5" />
+			<!-- Entrance to Heart of the Damned -->
+			<WaitTimer questId="1" waitTime="250" />
+			<UseObject questId="1" stepId="1" actorId="176001" isPortal="True" destinationWorldId="85201" interactRange="20" x="1080.005" y="883.4227" z="-112.3811" />
+			<WaitTimer questId="1" waitTime="250" />
+		</If>	
+
+		<!-- Lvl2B -->
+		<If condition="ActorExistsAt(176001, 844.4771, 1127.312, 39.86788, 30) and Zeta.ZetaDia.CurrentWorldId==80763">
+			<MoveTo questId="1" x="895.5365" y="1141.004" z="16.98792" pathPrecision="3" />
+		</If>
+		<!-- Checkpoint -->
+		<If condition="ActorExistsAt(3795, 901.4346, 1151.008, 11.92223, 30) and Zeta.ZetaDia.CurrentWorldId==80763">
+		<MoveTo questId="1" x="907.3346" y="1163.9" z="10.43232" pathPrecision="10" />
+		<MoveTo questId="1" x="919.9082" y="1187.702" z="10.1" pathPrecision="3" />
+		<MoveTo questId="1" x="957.5122" y="1223.606" z="10.1" pathPrecision="3" />
+		<MoveTo questId="1" x="966.5237" y="1176.087" z="10.10001" pathPrecision="3" />
+		<MoveTo questId="1" x="994.8138" y="1160.483" z="10.1" pathPrecision="3" />
+		<MoveTo questId="1" x="1010.005" y="1129.772" z="10.1" pathPrecision="3" />
+		<MoveTo questId="1" x="1002.858" y="1086.833" z="10.10001" pathPrecision="3" />
+		<MoveTo questId="1" x="1012.368" y="1059.524" z="10.17776" pathPrecision="3" />
+		<MoveTo questId="1" x="1017.393" y="1044.498" z="10.17776" pathPrecision="3" />
+		<MoveTo questId="1" x="1027.015" y="1024.083" z="0.1866989" pathPrecision="3" />
+		<MoveTo questId="1" x="1053.289" y="1038.201" z="0.09999619" pathPrecision="3" />
+		<MoveTo questId="1" x="1054.54" y="992.264" z="0.1000002" pathPrecision="3" />
+		<MoveTo questId="1" x="1084.193" y="978.7531" z="1.01955" pathPrecision="3" />
+		<MoveTo questId="1" x="1098.283" y="963.811" z="0.1000014" pathPrecision="3" />
+		<MoveTo questId="1" x="1120.521" y="971.0285" z="0.1000009" pathPrecision="3" />
+		<MoveTo questId="1" x="1137.843" y="971.6655" z="0.1" pathPrecision="3" />
+		<MoveTo questId="1" x="1155.631" y="977.579" z="0.09999999" pathPrecision="3" />
+		<MoveTo questId="1" x="1168.28" y="981.8266" z="1.049859" pathPrecision="3" />
+		<MoveTo questId="1" x="1187.738" y="958.6658" z="0.158865" pathPrecision="3" />
+		<MoveTo questId="1" x="1181.156" y="930.2018" z="5.243294" pathPrecision="3" />
+		<MoveTo questId="1" x="1150.953" y="915.3602" z="10.1" pathPrecision="3" />
+		<MoveTo questId="1" x="1104.298" y="906.5549" z="10.1" pathPrecision="3" />
+		<MoveTo questId="1" x="1057.878" y="910.4376" z="10.1" pathPrecision="3" />
+		<MoveTo questId="1" x="1026.905" y="915.8309" z="10.1" pathPrecision="3" />
+		<MoveTo questId="1" x="986.8138" y="931.7305" z="10.3426" pathPrecision="3" />
+		<MoveTo questId="1" x="962.3753" y="941.1791" z="10.1" pathPrecision="3" />
+		<MoveTo questId="1" x="927.4879" y="953.3028" z="10.62421" pathPrecision="3" />
+		<MoveTo questId="1" x="912.991" y="980.2873" z="10.25458" pathPrecision="3" />
+		<MoveTo questId="1" x="897.54" y="1014.33" z="10.1" pathPrecision="3" />
+		<MoveTo questId="1" x="890.9435" y="1043.286" z="10.1" pathPrecision="3" />
+		<MoveTo questId="1" x="905.0561" y="1062.805" z="10.1" pathPrecision="3" />
+		<MoveTo questId="1" x="916.6293" y="1059.287" z="10.1" pathPrecision="3" />
+		<MoveTo questId="1" x="941.3449" y="1061.6" z="10.1" pathPrecision="3" />
+		<MoveTo questId="1" x="968.3245" y="1065.472" z="10.1" pathPrecision="3" />
+		<MoveTo questId="1" x="1001.038" y="1057.95" z="10.16376" pathPrecision="3" />
+		<MoveTo questId="1" x="1010.742" y="1046.623" z="10.17776" pathPrecision="3" />
+		<MoveTo questId="1" x="1022.596" y="1018.374" z="0.1866979" pathPrecision="3" />
+		<MoveTo questId="1" x="1053.663" y="1006.804" z="0.1000005" pathPrecision="3" />
+		<MoveTo questId="1" x="1062.026" y="995.9839" z="0.1000006" pathPrecision="3" />
+		<MoveTo questId="1" x="1091.457" y="971.8458" z="1.019551" pathPrecision="3" />
+		<MoveTo questId="1" x="1108.983" y="965.9985" z="0.5355712" pathPrecision="3" />
+		<MoveTo questId="1" x="1129.13" y="965.6562" z="0.1" pathPrecision="3" />
+		<MoveTo questId="1" x="1157.658" y="966.4009" z="0.09999666" pathPrecision="3" />
+		<MoveTo questId="1" x="1180.39" y="963.774" z="0.1000037" pathPrecision="3" />
+		<MoveTo questId="1" x="1197.081" y="948.0377" z="0.1108953" pathPrecision="3" />
+		<MoveTo questId="1" x="1244.854" y="1000.077" z="0.1" pathPrecision="3" />
+		<MoveTo questId="1" x="1261.723" y="1046.818" z="0.1" pathPrecision="3" />
+		<MoveTo questId="1" x="1263.311" y="1079.384" z="0.5252683" pathPrecision="3" />
+		<MoveTo questId="1" x="1258.582" y="1105.155" z="-9.288193" pathPrecision="3" />
+		<MoveTo questId="1" x="1259.688" y="1163.836" z="-8.922881" pathPrecision="3" />
+		<MoveTo questId="1" x="1251.48" y="1181.381" z="-10.02707" pathPrecision="3" />
+		<MoveTo questId="1" x="1229.717" y="1207.161" z="-19.77117" pathPrecision="3" />
+		<MoveTo questId="1" x="1182.475" y="1256.437" z="-19.36245" pathPrecision="3" />
+		<MoveTo questId="1" x="1180.485" y="1257.812" z="-18.96451" pathPrecision="3" />
+		<MoveTo questId="1" x="1146.28" y="1259.454" z="-19.9" pathPrecision="3" />
+		<MoveTo questId="1" x="1121.169" y="1273.185" z="-19.82508" pathPrecision="3" />
+		<MoveTo questId="1" x="1083.844" y="1281.228" z="-19.65843" pathPrecision="3" />
+		<MoveTo questId="1" x="1084.512" y="1251.813" z="-24.44633" pathPrecision="3" />
+		<MoveTo questId="1" x="1091.943" y="1194.779" z="-29.9" pathPrecision="3" />
+		<MoveTo questId="1" x="1097.802" y="1165.943" z="-28.92021" pathPrecision="3" />
+		<MoveTo questId="1" x="1098.272" y="1139.751" z="-29.63876" pathPrecision="3" />
+		<MoveTo questId="1" x="1118.348" y="1130.474" z="-36.88467" pathPrecision="3" />
+		<MoveTo questId="1" x="1127.919" y="1094.302" z="-48.37367" pathPrecision="3" />
+		<MoveTo questId="1" x="1123.144" y="1068.966" z="-57.80269" pathPrecision="3" />
+		<MoveTo questId="1" x="1113.865" y="1056.779" z="-63.63674" pathPrecision="3" />
+		<MoveTo questId="1" x="1098.255" y="1042.839" z="-71.06171" pathPrecision="3" />
+		<MoveTo questId="1" x="1081.402" y="1040.904" z="-77.354" name="Next to Portal" />
+
+			<!-- Entrance to Heart of the Damned -->
+			<WaitTimer questId="1" waitTime="250" />
+			<UseObject questId="1" stepId="1" actorId="176001" isPortal="True" destinationWorldId="85201" interactRange="20" x="1080.005" y="1040.572" z="-67.72293" />
+			<WaitTimer questId="1" waitTime="250" />
+		</If>
+
+
+
+		<!-- Load Heart of the Damned -->
+		<WaitTimer questId="1" waitTime="2000" />
+		<Continue profile="BigRed_DamnedHeartA.xml, BigRed_DamnedHeartB.xml"/>
+	</Order>
+</Profile>
+

@@ -1,0 +1,33 @@
+<Profile>
+	<Name>[A3 - Inferno]BigRed 1.5 Profile Starter!</Name>
+	<KillMonsters>True</KillMonsters>
+	<PickupLoot>True</PickupLoot>
+	<GameParams quest="101758" step="29" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  />
+	<Order>
+		<If condition="(not Me.IsInTown)">   
+			<UseTownPortal questId="1" />       
+		</If>
+		<WaitTimer questId="1" waitTime="5000" />
+    <Ciggarc randomize="True" startprofiles="BigRed_START_HERE.xml" backup="BigRed_START_HERE.xml" />
+		<Continue />
+	</Order>
+	<Ciggarc>
+		<Randomize>
+			<select profiles="BigRed_BattlefieldswithBarracks.xml"/>
+			<Static>
+				<select profiles="BigRed_DamnedTowerA.xml;BigRed_DamnedTowerB.xml"/>
+				<select profiles="BigRed_DamnedHeartA.xml;BigRed_DamnedHeartB.xml"/>
+				<select profiles="BigRed_CursedTowerA.xml;BigRed_CursedTowerB.xml"/>
+				<select profiles="BigRed_CursedHeart.xml"/>
+			</Static>
+			<select profiles="BigRed_FieldsofSlaughterA.xml;BigRed_FieldsofSlaughterB.xml"/>
+			<select profiles="BigRed_Rakki.xml"/>
+			<select profiles="BigRed_Underbridge.xml"/>
+			<Static>
+				<select profiles="BigRed_StonefortA.xml;BigRed_StonefortB.xml"/>
+				<select profiles="BigRed_SkycrownA.xml;BigRed_SkycrownB.xml"/>
+			</Static>	
+		</Randomize>
+		<select profiles="BigRed_CoreOnlyA.xml;BigRed_CoreOnlyB.xml"/>
+	</Ciggarc>
+</Profile>

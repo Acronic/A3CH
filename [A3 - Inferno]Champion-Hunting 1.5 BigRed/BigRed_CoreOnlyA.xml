@@ -1,0 +1,53 @@
+<Profile>
+	<Name>[A3 - Inferno]BigRed 1.5 - Arreat Core [A]</Name>
+	<Ciggarc StartProfile="BigRed_START_HERE.xml"/>
+	<KillMonsters>True</KillMonsters>
+	<PickupLoot>True</PickupLoot>
+	<GameParams quest="101758" step="1" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  />
+	<Order>
+	<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="45" />
+
+		<!-- From Town -->
+		<If condition="Zeta.ZetaDia.CurrentWorldId==172909 and IsActiveQuestStep(1)">
+			<MoveTo questId="1" x="402.5403" y="414.342" z="1.5338" />
+			<WaitTimer questId="1" waitTime="150" />
+			<UseWaypoint questId="1" actorId="6442" x="402.5403" y="414.342" z="1.5338" waypointNumber="10" />	
+				<While condition="Me.IsInTown">
+					<WaitTimer questId="1" waitTime="50" />
+				</While>			
+		</If>
+		
+		<!-- From Waypoint -->
+		<If condition="ActorExistsAt(6442, 1162.255, 686.1193, 0.1, 40) and ZetaDia.CurrentWorldId == 119290"> 
+			<WaitTimer questId="1" waitTime="250" />
+			<MoveTo questId="1" x="1140.686" y="732.1945" z="0.1000002" pathPrecision="10" name="Arreat Core-01" />
+			<MoveTo questId="1" x="1081.564" y="715.2292" z="0.09999999" pathPrecision="10" name="Arreat Core-02" />
+			<MoveTo questId="1" x="991.7961" y="728.0093" z="0.1000001" pathPrecision="10" name="Arreat Core-03" />
+			<MoveTo questId="1" x="885.3837" y="717.8165" z="0.1000153" pathPrecision="10" name="Arreat Core-04" />
+			<MoveTo questId="1" x="775.1333" y="627.4221" z="0.1000157" pathPrecision="10" name="Arreat Core-05" />
+			<MoveTo questId="1" x="737.8298" y="549.946" z="0.1000217" pathPrecision="10" name="Arreat Core-06" />
+			<MoveTo questId="1" x="591.9153" y="550.4387" z="0.1000032" pathPrecision="10" name="Arreat Core-07" />
+			<MoveTo questId="1" x="548.8901" y="651.1499" z="0.1000153" pathPrecision="10" name="Arreat Core-08" />
+			<MoveTo questId="1" x="544.4486" y="707.1024" z="0.529933" pathPrecision="10" name="Arreat Core-09" />
+			<MoveTo questId="1" x="336.1475" y="724.474" z="0.1" pathPrecision="10" name="Arreat Core-10" />
+			<MoveTo questId="1" x="183.6722" y="720.6746" z="-47.19459" name="Arreat Core-11" />
+			<WaitTimer questId="1" waitTime="250" />
+		</If>		
+		
+		<!-- Checkpoint In front of Azmodan -->	
+		<If condition="ActorExistsAt(3795, 183.6722, 720.6746, -47.19459, 40) and ZetaDia.CurrentWorldId == 119290"> 
+			<MoveTo questId="1" x="156.8677" y="719.1554" z="-51.6376" name="Arreat Core-12" />
+			<WaitTimer questId="1" waitTime="250" />
+			<UseTownPortal questId="1" />       
+		</If>
+	
+		<If condition="(not Me.IsInTown)">   
+			<UseTownPortal questId="1" />  
+				<While condition="not Me.IsInTown">
+					<WaitTimer questId="1" waitTime="50" />
+				</While>
+		</If>
+		
+		<Continue profile="BigRed_START_HERE.xml" exitgame="true"/>
+	</Order>
+</Profile>

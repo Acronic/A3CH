@@ -1,5 +1,6 @@
 <Profile>
-	<Name>[A3 - Inferno]Champion-Hunting 1.3.6.3 BigRed - Azmodan - Arreat Core</Name>
+	<Name>[A3 - Inferno]BigRed 1.5 - Azmodan [A]</Name>
+	<Ciggarc StartProfile="BigRed_START_HERE.xml"/>
 	<KillMonsters>True</KillMonsters>
 	<PickupLoot>True</PickupLoot>
 	<GameParams quest="101758" step="1" act="A3" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1"  />
@@ -31,14 +32,43 @@
 			<MoveTo questId="1" x="336.1475" y="724.474" z="0.1" pathPrecision="10" name="Arreat Core-10" />
 			<MoveTo questId="1" x="183.6722" y="720.6746" z="-47.19459" name="Arreat Core-11" />
 			<WaitTimer questId="1" waitTime="250" />
-		</If>		
+		</If>	
 		
 		<!-- Checkpoint In front of Azmodan -->	
 		<If condition="ActorExistsAt(3795, 183.6722, 720.6746, -47.19459, 40) and ZetaDia.CurrentWorldId == 119290"> 
-			<MoveTo questId="1" x="156.8677" y="719.1554" z="-51.6376" name="Arreat Core-12" />
 			<WaitTimer questId="1" waitTime="250" />
-			<UseTownPortal questId="1" />       
+			<MoveTo questId="1" x="156.8677" y="719.1554" z="-51.6376" name="Arreat Core-12" />
+			<UseObject questId="1" actorId="159575" isPortal="True" destinationWorldId="121214" interactRange="75" /> 	<!-- Portal to Azmodan -->
+			<WaitTimer questId="1" waitTime="250" />
 		</If>
+		
+		<!-- Kill Azmodan -->
+		<If condition="ZetaDia.CurrentWorldId == 121214 and IsActiveQuestStep(1)" >
+			<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="200" killRadius="200" />
+
+
+			<MoveTo questId="1" x="672.2292" y="674.9328" z="80.34946" name="Top of the Stairs" />
+			<MoveTo questId="1" x="643.5524" y="647.3046" z="63.04906" name="Down the Stairs to Azmo - 01" />
+			<MoveTo questId="1" x="619.676" y="623.6473" z="47.69696" name="Down the Stairs to Azmo - 02" />
+			<MoveTo questId="1" x="582.1134" y="584.9152" z="22.92652"  name="Down the Stairs to Azmo - 03" />
+			<MoveTo questId="1" x="560.157" y="562.6616" z="8.719705" pathPrecision="5" name="Down the Stairs to Azmo - 04" />
+			<MoveTo questId="101758" stepId="1" x="486.2456" y="505.7155" z="0.5194985" name="Azmodan-1"  />		
+						
+				<While condition="IsActiveQuestStep(1)">
+					<SkipCutscene questId="101758" stepId="1" />	
+				</While>
+				
+			<MoveTo questId="101758" stepId="1" x="385.292" y="402.2332" z="0.5195014" name="Azmodan-2" />
+			<WaitTimer questId="101758" stepId="1" waitTime="225000" /> 
+		</If>
+		<!-- Azmodan Dead -->
+		<If condition="IsActiveQuestStep(32) and ZetaDia.CurrentWorldId == 121214" >
+				<MoveTo questId="1" x="390.9271" y="393.5964" z="0.1000014" pathPrecision="10" name="Post Azmodan-1" />
+				<MoveTo questId="1" x="479.0075" y="422.4702" z="0.1734161" pathPrecision="10" name="Post Azmodan-2" />
+				<MoveTo questId="1" x="484.9087" y="483.4088" z="0.1734212" pathPrecision="10" name="Post Azmodan-3" />
+				<MoveTo questId="1" x="417.3651" y="483.5094" z="0.1734192" pathPrecision="10" name="Post Azmodan-4" />
+				<MoveTo questId="1" x="389.9103" y="435.9934" z="0.1" pathPrecision="10" name="Post Azmodan-5" />
+		</If> 
 	
 		<If condition="(not Me.IsInTown)">   
 			<UseTownPortal questId="1" />  
